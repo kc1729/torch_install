@@ -1,0 +1,5592 @@
+commands = {
+   json2lua = {
+      "lua-cjson/2.1devel-1"
+   },
+   lua2json = {
+      "lua-cjson/2.1devel-1"
+   },
+   mdcat = {
+      "sundown/scm-1"
+   },
+   th = {
+      "trepl/scm-1"
+   },
+   ["totem-init"] = {
+      "totem/0-0"
+   },
+   ["totem-run"] = {
+      "totem/0-0"
+   }
+}
+dependencies = {
+   alewrap = {
+      ["0-0"] = {
+         {
+            constraints = {},
+            name = "xitari"
+         }, {
+            constraints = {},
+            name = "image"
+         }, {
+            constraints = {},
+            name = "paths"
+         }
+      }
+   },
+   argcheck = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sundown"
+         }
+      }
+   },
+   bit32 = {
+      ["5.3.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }, {
+                  op = "<=",
+                  version = {
+                     5, 3, string = "5.3"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   classic = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "totem"
+         }
+      }
+   },
+   cudnn = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "cutorch"
+         }, {
+            constraints = {},
+            name = "nn"
+         }
+      }
+   },
+   cunn = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "nn"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "cutorch"
+         }
+      }
+   },
+   cunnx = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "nn"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "cunn"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     0, 1, string = "0.1"
+                  }
+               }
+            },
+            name = "nnx"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "cutorch"
+         }
+      }
+   },
+   cutorch = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   cwrap = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   dataprovider = {
+      ["scm-1"] = {}
+   },
+   dok = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sundown"
+         }
+      }
+   },
+   dp = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, 5, string = "1.0.5"
+                  }
+               }
+            },
+            name = "optim"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 3, 1, string = "1.3.1"
+                  }
+               }
+            },
+            name = "moses"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     0, 1, string = "0.1"
+                  }
+               }
+            },
+            name = "nnx"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "dpnn"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "xlua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "image"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 6, 2, string = "1.6.2"
+                  }
+               }
+            },
+            name = "luafilesystem"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 1, string = "1.1"
+                  }
+               }
+            },
+            name = "sys"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "torchx"
+         }
+      }
+   },
+   dpnn = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "nn"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     0, 1, string = "0.1"
+                  }
+               }
+            },
+            name = "nnx"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 3, 1, string = "1.3.1"
+                  }
+               }
+            },
+            name = "moses"
+         }
+      }
+   },
+   env = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "gnuplot"
+         }, {
+            constraints = {},
+            name = "dok"
+         }
+      }
+   },
+   fftw3 = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   fn = {
+      ["0-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "util"
+         }, {
+            constraints = {},
+            name = "totem"
+         }
+      }
+   },
+   gnuplot = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "paths"
+         }
+      }
+   },
+   graph = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   graphicsmagick = {
+      ["1.scm-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sys"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "image"
+         }
+      }
+   },
+   image = {
+      ["1.1.alpha-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sys"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "xlua"
+         }, {
+            constraints = {},
+            name = "dok"
+         }
+      }
+   },
+   logroll = {
+      ["0-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "fn"
+         }, {
+            constraints = {},
+            name = "paths"
+         }, {
+            constraints = {},
+            name = "pprint"
+         }
+      }
+   },
+   ["lua-cjson"] = {
+      ["2.1devel-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luaffi = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luafilesystem = {
+      ["1.6.3-2"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luagd = {
+      ["2.0.33r3-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luaposix = {
+      ["33.4.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }, {
+                  op = "<",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {},
+            name = "bit32"
+         }
+      }
+   },
+   luasocket = {
+      ["3.0rc1-2"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   lub = {
+      ["1.1.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }, {
+                  op = "<",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 4, 0, string = "1.4.0"
+                  }
+               }
+            },
+            name = "luafilesystem"
+         }
+      }
+   },
+   moses = {
+      ["1.4.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   nn = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "luaffi"
+         }
+      }
+   },
+   nngraph = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "graph"
+         }, {
+            constraints = {},
+            name = "nn"
+         }
+      }
+   },
+   nninit = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "nn"
+         }
+      }
+   },
+   nnx = {
+      ["0.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "xlua"
+         }
+      }
+   },
+   optim = {
+      ["1.0.5-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   paths = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   penlight = {
+      ["1.3.2-2"] = {
+         {
+            constraints = {},
+            name = "luafilesystem"
+         }
+      }
+   },
+   pprint = {
+      ["0-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   qtlua = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   qttorch = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "qtlua"
+         }
+      }
+   },
+   rlenvs = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "image"
+         }, {
+            constraints = {},
+            name = "classic"
+         }
+      }
+   },
+   rnn = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "nn"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "dpnn"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "torchx"
+         }
+      }
+   },
+   signal = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "fftw3"
+         }
+      }
+   },
+   sundown = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   sys = {
+      ["1.1-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   tds = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   threads = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   torch = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "paths"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "cwrap"
+         }
+      }
+   },
+   torchx = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, string = "1"
+                  }
+               }
+            },
+            name = "paths"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 1, string = "1.1"
+                  }
+               }
+            },
+            name = "sys"
+         }
+      }
+   },
+   totem = {
+      ["0-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {},
+            name = "sys"
+         }, {
+            constraints = {},
+            name = "penlight"
+         }, {
+            constraints = {},
+            name = "nn"
+         }, {
+            constraints = {},
+            name = "nngraph"
+         }
+      }
+   },
+   trepl = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 1, 0, string = "1.1.0"
+                  }
+               }
+            },
+            name = "penlight"
+         }
+      }
+   },
+   unsup = {
+      ["0.1-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "xlua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "optim"
+         }
+      }
+   },
+   util = {
+      ["0-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   xitari = {
+      ["0-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }
+      }
+   },
+   xlua = {
+      ["1.1-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     7, 0, string = "7.0"
+                  }
+               }
+            },
+            name = "torch"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, string = "1.0"
+                  }
+               }
+            },
+            name = "sys"
+         }
+      }
+   },
+   yaml = {
+      ["1.1.2-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }, {
+                  op = "<",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         }, {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 0, 3, string = "1.0.3"
+                  }
+               }, {
+                  op = "<",
+                  version = {
+                     2, string = "2"
+                  }
+               }
+            },
+            name = "lub"
+         }
+      }
+   }
+}
+modules = {
+   DataProvider = {
+      "dataprovider/scm-1"
+   },
+   ["DataProvider.Container"] = {
+      "dataprovider/scm-1"
+   },
+   ["DataProvider.FileSearcher"] = {
+      "dataprovider/scm-1"
+   },
+   ["DataProvider.LMDBProvider"] = {
+      "dataprovider/scm-1"
+   },
+   ["DataProvider.MultiThreaded"] = {
+      "dataprovider/scm-1"
+   },
+   ["DataProvider.test"] = {
+      "dataprovider/scm-1"
+   },
+   alewrap = {
+      "alewrap/0-0"
+   },
+   ["alewrap.AleEnv"] = {
+      "alewrap/0-0"
+   },
+   ["alewrap.AtariLayer"] = {
+      "alewrap/0-0"
+   },
+   ["alewrap.GameEnvironment"] = {
+      "alewrap/0-0"
+   },
+   ["alewrap.GameScreen"] = {
+      "alewrap/0-0"
+   },
+   ["alewrap.aleffi"] = {
+      "alewrap/0-0"
+   },
+   ["alewrap/alewrap.inl"] = {
+      "alewrap/0-0"
+   },
+   argcheck = {
+      "argcheck/scm-1"
+   },
+   ["argcheck.doc"] = {
+      "argcheck/scm-1"
+   },
+   ["argcheck.dump"] = {
+      "argcheck/scm-1"
+   },
+   ["argcheck.env"] = {
+      "argcheck/scm-1"
+   },
+   ["argcheck.graph"] = {
+      "argcheck/scm-1"
+   },
+   ["argcheck.usage"] = {
+      "argcheck/scm-1"
+   },
+   ["argcheck.utils"] = {
+      "argcheck/scm-1"
+   },
+   bit32 = {
+      "bit32/5.3.0-1"
+   },
+   cjson = {
+      "lua-cjson/2.1devel-1"
+   },
+   ["cjson.util"] = {
+      "lua-cjson/2.1devel-1"
+   },
+   classic = {
+      "classic/scm-1"
+   },
+   ["classic.Class"] = {
+      "classic/scm-1"
+   },
+   ["classic.Module"] = {
+      "classic/scm-1"
+   },
+   ["classic.tests.class.common"] = {
+      "classic/scm-1"
+   },
+   ["classic.tests.class.definitions"] = {
+      "classic/scm-1"
+   },
+   ["classic.tests.class.utils"] = {
+      "classic/scm-1"
+   },
+   ["classic.tests.module.test"] = {
+      "classic/scm-1"
+   },
+   ["classic.torch"] = {
+      "classic/scm-1"
+   },
+   cudnn = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.BLSTM"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.BatchNormalization"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.ClippedReLU"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.GRU"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.LSTM"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.LogSoftMax"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.Pointwise"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.Pooling"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.Pooling3D"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.RNN"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.RNNReLU"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.RNNTanh"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.ReLU"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.Sigmoid"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SoftMax"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialAveragePooling"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialBatchNormalization"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialConvolution"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialCrossEntropyCriterion"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialCrossMapLRN"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialDivisiveNormalization"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialFullConvolution"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialLogSoftMax"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialMaxPooling"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.SpatialSoftMax"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.Tanh"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.TemporalConvolution"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.VolumetricAveragePooling"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.VolumetricBatchNormalization"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.VolumetricConvolution"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.VolumetricMaxPooling"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.convert"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.env"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.ffi"] = {
+      "cudnn/scm-1"
+   },
+   ["cudnn.functional"] = {
+      "cudnn/scm-1"
+   },
+   cunn = {
+      "cunn/scm-1"
+   },
+   ["cunn.DataParallelTable"] = {
+      "cunn/scm-1"
+   },
+   ["cunn.THCUNN"] = {
+      "cunn/scm-1"
+   },
+   ["cunn.THCUNN_h"] = {
+      "cunn/scm-1"
+   },
+   ["cunn.test"] = {
+      "cunn/scm-1"
+   },
+   ["cunn.test_DataParallelTable"] = {
+      "cunn/scm-1"
+   },
+   cunnx = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.BlockMixture"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.BlockSparse"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.LazyKBest"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.LinearNoBias"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.MultinomialStatistics"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.NoisyReLU"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.Sort"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.TypeDecorator"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.WindowGate"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.WindowGate2"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.WindowMixture"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.WindowSparse"] = {
+      "cunnx/scm-1"
+   },
+   ["cunnx.test"] = {
+      "cunnx/scm-1"
+   },
+   cutorch = {
+      "cutorch/scm-1"
+   },
+   ["cutorch.FFI"] = {
+      "cutorch/scm-1"
+   },
+   ["cutorch.Tensor"] = {
+      "cutorch/scm-1"
+   },
+   ["cutorch.test"] = {
+      "cutorch/scm-1"
+   },
+   cwrap = {
+      "cwrap/scm-1"
+   },
+   ["cwrap.cinterface"] = {
+      "cwrap/scm-1"
+   },
+   ["cwrap.types"] = {
+      "cwrap/scm-1"
+   },
+   ["cwrap/README.md"] = {
+      "cwrap/scm-1"
+   },
+   dok = {
+      "dok/scm-1"
+   },
+   ["dok.inline"] = {
+      "dok/scm-1"
+   },
+   dp = {
+      "dp/scm-1"
+   },
+   ["dp.data.baseset"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.batch"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.billionwords"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.cifar10"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.cifar100"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.dataset"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.datasource"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.facedetection"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.facialkeypoints"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.imageclassset"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.imagenet"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.imagesource"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.mnist"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.notmnist"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.penntreebank"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.sentenceset"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.smallimagesource"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.svhn"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.textset"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.textsource"] = {
+      "dp/scm-1"
+   },
+   ["dp.data.translatedmnist"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.alexnet"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.convolutionneuralnetwork"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.deepinception"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.facialkeypointdetector"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.fkdbaseline"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.languagemodel"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.mixtureofexperts"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.neuralnetwork"] = {
+      "dp/scm-1"
+   },
+   ["dp.examples.recurrentlanguagemodel"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.compositefeedback"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.confusion"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.criteria"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.facialkeypointfeedback"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.feedback"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.fkdkaggle"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.perplexity"] = {
+      "dp/scm-1"
+   },
+   ["dp.feedback.topcrop"] = {
+      "dp/scm-1"
+   },
+   ["dp.mediator"] = {
+      "dp/scm-1"
+   },
+   ["dp.nn.FairLookupTable"] = {
+      "dp/scm-1"
+   },
+   ["dp.nn.Print"] = {
+      "dp/scm-1"
+   },
+   ["dp.objectid"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.adaptivedecay"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.compositeobserver"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.earlystopper"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.errorminima"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.filelogger"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.hyperlog"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.logger"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.observer"] = {
+      "dp/scm-1"
+   },
+   ["dp.observer.savetofile"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.binarize"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.gcn"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.lecunlcn"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.parallelpreprocess"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.pipeline"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.preprocess"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.standardize"] = {
+      "dp/scm-1"
+   },
+   ["dp.preprocess.zca"] = {
+      "dp/scm-1"
+   },
+   ["dp.propagator.evaluator"] = {
+      "dp/scm-1"
+   },
+   ["dp.propagator.experiment"] = {
+      "dp/scm-1"
+   },
+   ["dp.propagator.optimizer"] = {
+      "dp/scm-1"
+   },
+   ["dp.propagator.propagator"] = {
+      "dp/scm-1"
+   },
+   ["dp.sampler.randomsampler"] = {
+      "dp/scm-1"
+   },
+   ["dp.sampler.sampler"] = {
+      "dp/scm-1"
+   },
+   ["dp.sampler.sentencesampler"] = {
+      "dp/scm-1"
+   },
+   ["dp.sampler.shufflesampler"] = {
+      "dp/scm-1"
+   },
+   ["dp.sampler.textsampler"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.downloadimagenet"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.generate_mnist_data"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.harmonizeimagenet"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.json2table"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.listcollections"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.plotcurves"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.rankbyminima"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.showfilters"] = {
+      "dp/scm-1"
+   },
+   ["dp.scripts.trainserialized"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.runtest"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.test"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.test-benchmark"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.test-cuda"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.test-datasets"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.testDataset"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.testDatasetFullSplit"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.testDatasetNoSplit"] = {
+      "dp/scm-1"
+   },
+   ["dp.test.test_imageclassset"] = {
+      "dp/scm-1"
+   },
+   ["dp.utils.os"] = {
+      "dp/scm-1"
+   },
+   ["dp.utils.table"] = {
+      "dp/scm-1"
+   },
+   ["dp.utils.torch"] = {
+      "dp/scm-1"
+   },
+   ["dp.utils.underscore"] = {
+      "dp/scm-1"
+   },
+   ["dp.utils.utils"] = {
+      "dp/scm-1"
+   },
+   ["dp.view.classview"] = {
+      "dp/scm-1"
+   },
+   ["dp.view.dataview"] = {
+      "dp/scm-1"
+   },
+   ["dp.view.imageview"] = {
+      "dp/scm-1"
+   },
+   ["dp.view.listview"] = {
+      "dp/scm-1"
+   },
+   ["dp.view.sequenceview"] = {
+      "dp/scm-1"
+   },
+   ["dp.view.view"] = {
+      "dp/scm-1"
+   },
+   ["dp.xplog"] = {
+      "dp/scm-1"
+   },
+   dpnn = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ArgMax"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.BatchNormalization"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.BinaryLogisticRegression"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.CAddTensorTable"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.CategoricalEntropy"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Clip"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Collapse"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Constant"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Container"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Convert"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Criterion"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Decorator"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Dictionary"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.DontCast"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.FireModule"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Inception"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Kmeans"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.LookupTable"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Module"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ModuleCriterion"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.NCECriterion"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.NCEModule"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.NaN"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.OneHot"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.PCAColorTransform"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ParallelTable"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.PrintSize"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Reinforce"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ReinforceBernoulli"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ReinforceCategorical"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ReinforceGamma"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ReinforceNormal"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ReverseTable"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Sequential"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.Serial"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SimpleColorTransform"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SoftMaxForest"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SoftMaxTree"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialBatchNormalization"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialBinaryConvolution"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialBinaryLogisticRegression"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialConvolution"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialConvolutionMM"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialFeatNormalization"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialGlimpse"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialMaxPooling"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialRegionDropout"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.SpatialUniformCrop"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.TotalDropout"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.VRClassReward"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.WhiteNoise"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ZipTable"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.ZipTableOneToMany"] = {
+      "dpnn/scm-1"
+   },
+   ["dpnn.test"] = {
+      "dpnn/scm-1"
+   },
+   env = {
+      "env/scm-1"
+   },
+   ffi = {
+      "luaffi/scm-1"
+   },
+   ["ffi.libtest"] = {
+      "luaffi/scm-1"
+   },
+   ["ffi.test"] = {
+      "luaffi/scm-1"
+   },
+   fftw3 = {
+      "fftw3/scm-1"
+   },
+   ["fftw3.cdefs"] = {
+      "fftw3/scm-1"
+   },
+   ["fftw3.defines"] = {
+      "fftw3/scm-1"
+   },
+   fn = {
+      "fn/0-0"
+   },
+   ["fn.seq"] = {
+      "fn/0-0"
+   },
+   gd = {
+      "luagd/2.0.33r3-1"
+   },
+   gnuplot = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot.gnuplot"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot.hist"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/README.md"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_filled.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_hist.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_imagesc.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_sincos.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_splot.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_splot2.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_x.png"] = {
+      "gnuplot/scm-1"
+   },
+   ["gnuplot/doc/plot_xyf.png"] = {
+      "gnuplot/scm-1"
+   },
+   graph = {
+      "graph/scm-1"
+   },
+   ["graph.Edge"] = {
+      "graph/scm-1"
+   },
+   ["graph.Node"] = {
+      "graph/scm-1"
+   },
+   ["graph.graphviz"] = {
+      "graph/scm-1"
+   },
+   graphicsmagick = {
+      "graphicsmagick/1.scm-0"
+   },
+   ["graphicsmagick.Image"] = {
+      "graphicsmagick/1.scm-0"
+   },
+   ["graphicsmagick.convert"] = {
+      "graphicsmagick/1.scm-0"
+   },
+   ["graphicsmagick.exif"] = {
+      "graphicsmagick/1.scm-0"
+   },
+   ["graphicsmagick.info"] = {
+      "graphicsmagick/1.scm-0"
+   },
+   image = {
+      "image/1.1.alpha-0"
+   },
+   ["image.test"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/README.md"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P2.pgm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P4.pbm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P5.pgm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/P6.ppm"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/corrupt-ihdr.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/fabio.jpg"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/fabio.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/foobar.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/gray16-1x2.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/gray3x1.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/lena.jpg"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/lena.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/rgb16-2x1.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/assets/rgb2x1.png"] = {
+      "image/1.1.alpha-0"
+   },
+   ["image/win.ui"] = {
+      "image/1.1.alpha-0"
+   },
+   json2lua = {
+      "lua-cjson/2.1devel-1"
+   },
+   lfs = {
+      "luafilesystem/1.6.3-2"
+   },
+   libTHCUNN = {
+      "cunn/scm-1"
+   },
+   libTHNN = {
+      "nn/scm-1"
+   },
+   libalewrap = {
+      "alewrap/0-0"
+   },
+   libcunnx = {
+      "cunnx/scm-1"
+   },
+   libcutorch = {
+      "cutorch/scm-1"
+   },
+   libimage = {
+      "image/1.1.alpha-0"
+   },
+   libjpeg = {
+      "image/1.1.alpha-0"
+   },
+   libnnx = {
+      "nnx/0.1-1"
+   },
+   libpaths = {
+      "paths/scm-1"
+   },
+   libpng = {
+      "image/1.1.alpha-0"
+   },
+   libppm = {
+      "image/1.1.alpha-0"
+   },
+   libqtcore = {
+      "qtlua/scm-1"
+   },
+   libqtgui = {
+      "qtlua/scm-1"
+   },
+   libqtide = {
+      "qtlua/scm-1"
+   },
+   libqtsvg = {
+      "qtlua/scm-1"
+   },
+   libqttorch = {
+      "qttorch/scm-1"
+   },
+   libqtuiloader = {
+      "qtlua/scm-1"
+   },
+   libqtwidget = {
+      "qtlua/scm-1"
+   },
+   libsignal = {
+      "signal/scm-1"
+   },
+   libsundown = {
+      "sundown/scm-1"
+   },
+   libsys = {
+      "sys/1.1-0"
+   },
+   libtds = {
+      "tds/scm-1"
+   },
+   libthreads = {
+      "threads/scm-1"
+   },
+   libtorch = {
+      "torch/scm-1"
+   },
+   libunsup = {
+      "unsup/0.1-0"
+   },
+   logroll = {
+      "logroll/0-0"
+   },
+   ltn12 = {
+      "luasocket/3.0rc1-2"
+   },
+   lua2json = {
+      "lua-cjson/2.1devel-1"
+   },
+   lub = {
+      "lub/1.1.0-1"
+   },
+   ["lub.Autoload"] = {
+      "lub/1.1.0-1"
+   },
+   ["lub.Dir"] = {
+      "lub/1.1.0-1"
+   },
+   ["lub.Param"] = {
+      "lub/1.1.0-1"
+   },
+   ["lub.Template"] = {
+      "lub/1.1.0-1"
+   },
+   mime = {
+      "luasocket/3.0rc1-2"
+   },
+   ["mime.core"] = {
+      "luasocket/3.0rc1-2"
+   },
+   moses = {
+      "moses/1.4.0-1"
+   },
+   moses_min = {
+      "moses/1.4.0-1"
+   },
+   nn = {
+      "nn/scm-1"
+   },
+   ["nn.Abs"] = {
+      "nn/scm-1"
+   },
+   ["nn.AbsCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Add"] = {
+      "nn/scm-1"
+   },
+   ["nn.AddConstant"] = {
+      "nn/scm-1"
+   },
+   ["nn.BCECriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.BatchNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.Bilinear"] = {
+      "nn/scm-1"
+   },
+   ["nn.CAddTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CDivTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CMul"] = {
+      "nn/scm-1"
+   },
+   ["nn.CMulTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CSubTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Clamp"] = {
+      "nn/scm-1"
+   },
+   ["nn.ClassNLLCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.ClassSimplexCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Concat"] = {
+      "nn/scm-1"
+   },
+   ["nn.ConcatTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Container"] = {
+      "nn/scm-1"
+   },
+   ["nn.Contiguous"] = {
+      "nn/scm-1"
+   },
+   ["nn.Copy"] = {
+      "nn/scm-1"
+   },
+   ["nn.Cosine"] = {
+      "nn/scm-1"
+   },
+   ["nn.CosineDistance"] = {
+      "nn/scm-1"
+   },
+   ["nn.CosineEmbeddingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Criterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.CriterionTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.CrossEntropyCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.DepthConcat"] = {
+      "nn/scm-1"
+   },
+   ["nn.DistKLDivCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.DotProduct"] = {
+      "nn/scm-1"
+   },
+   ["nn.Dropout"] = {
+      "nn/scm-1"
+   },
+   ["nn.ELU"] = {
+      "nn/scm-1"
+   },
+   ["nn.ErrorMessages"] = {
+      "nn/scm-1"
+   },
+   ["nn.Euclidean"] = {
+      "nn/scm-1"
+   },
+   ["nn.Exp"] = {
+      "nn/scm-1"
+   },
+   ["nn.FlattenTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.GradientReversal"] = {
+      "nn/scm-1"
+   },
+   ["nn.HardShrink"] = {
+      "nn/scm-1"
+   },
+   ["nn.HardTanh"] = {
+      "nn/scm-1"
+   },
+   ["nn.HingeEmbeddingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Identity"] = {
+      "nn/scm-1"
+   },
+   ["nn.Index"] = {
+      "nn/scm-1"
+   },
+   ["nn.Jacobian"] = {
+      "nn/scm-1"
+   },
+   ["nn.JoinTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.L1Cost"] = {
+      "nn/scm-1"
+   },
+   ["nn.L1HingeEmbeddingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.L1Penalty"] = {
+      "nn/scm-1"
+   },
+   ["nn.LeakyReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.Linear"] = {
+      "nn/scm-1"
+   },
+   ["nn.Log"] = {
+      "nn/scm-1"
+   },
+   ["nn.LogSigmoid"] = {
+      "nn/scm-1"
+   },
+   ["nn.LogSoftMax"] = {
+      "nn/scm-1"
+   },
+   ["nn.LookupTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.MM"] = {
+      "nn/scm-1"
+   },
+   ["nn.MSECriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MV"] = {
+      "nn/scm-1"
+   },
+   ["nn.MarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MarginRankingCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MaskedSelect"] = {
+      "nn/scm-1"
+   },
+   ["nn.Max"] = {
+      "nn/scm-1"
+   },
+   ["nn.Mean"] = {
+      "nn/scm-1"
+   },
+   ["nn.Min"] = {
+      "nn/scm-1"
+   },
+   ["nn.MixtureTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Module"] = {
+      "nn/scm-1"
+   },
+   ["nn.Mul"] = {
+      "nn/scm-1"
+   },
+   ["nn.MulConstant"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiLabelMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiLabelSoftMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.MultiMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.Narrow"] = {
+      "nn/scm-1"
+   },
+   ["nn.NarrowTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Normalize"] = {
+      "nn/scm-1"
+   },
+   ["nn.PReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.Padding"] = {
+      "nn/scm-1"
+   },
+   ["nn.PairwiseDistance"] = {
+      "nn/scm-1"
+   },
+   ["nn.Parallel"] = {
+      "nn/scm-1"
+   },
+   ["nn.ParallelCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.ParallelTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.PartialLinear"] = {
+      "nn/scm-1"
+   },
+   ["nn.Power"] = {
+      "nn/scm-1"
+   },
+   ["nn.RReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.ReLU"] = {
+      "nn/scm-1"
+   },
+   ["nn.Replicate"] = {
+      "nn/scm-1"
+   },
+   ["nn.Reshape"] = {
+      "nn/scm-1"
+   },
+   ["nn.Select"] = {
+      "nn/scm-1"
+   },
+   ["nn.SelectTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sequential"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sigmoid"] = {
+      "nn/scm-1"
+   },
+   ["nn.SmoothL1Criterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftMarginCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftMax"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftMin"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftPlus"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftShrink"] = {
+      "nn/scm-1"
+   },
+   ["nn.SoftSign"] = {
+      "nn/scm-1"
+   },
+   ["nn.SparseJacobian"] = {
+      "nn/scm-1"
+   },
+   ["nn.SparseLinear"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialAdaptiveMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialAveragePooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialBatchNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialClassNLLCriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialContrastiveNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolutionLocal"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolutionMM"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialConvolutionMap"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialCrossMapLRN"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialDilatedConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialDivisiveNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialDropout"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialFractionalMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialFullConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialFullConvolutionMap"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialLPPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialMaxUnpooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialReflectionPadding"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialReplicationPadding"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialSoftMax"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialSubSampling"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialSubtractiveNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialUpSamplingNearest"] = {
+      "nn/scm-1"
+   },
+   ["nn.SpatialZeroPadding"] = {
+      "nn/scm-1"
+   },
+   ["nn.SplitTable"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sqrt"] = {
+      "nn/scm-1"
+   },
+   ["nn.Square"] = {
+      "nn/scm-1"
+   },
+   ["nn.Squeeze"] = {
+      "nn/scm-1"
+   },
+   ["nn.StochasticGradient"] = {
+      "nn/scm-1"
+   },
+   ["nn.Sum"] = {
+      "nn/scm-1"
+   },
+   ["nn.THNN"] = {
+      "nn/scm-1"
+   },
+   ["nn.THNN_h"] = {
+      "nn/scm-1"
+   },
+   ["nn.Tanh"] = {
+      "nn/scm-1"
+   },
+   ["nn.TanhShrink"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.TemporalSubSampling"] = {
+      "nn/scm-1"
+   },
+   ["nn.Threshold"] = {
+      "nn/scm-1"
+   },
+   ["nn.Transpose"] = {
+      "nn/scm-1"
+   },
+   ["nn.Unsqueeze"] = {
+      "nn/scm-1"
+   },
+   ["nn.View"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricAveragePooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricBatchNormalization"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricDropout"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricFullConvolution"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricMaxPooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.VolumetricMaxUnpooling"] = {
+      "nn/scm-1"
+   },
+   ["nn.WeightedEuclidean"] = {
+      "nn/scm-1"
+   },
+   ["nn.WeightedMSECriterion"] = {
+      "nn/scm-1"
+   },
+   ["nn.hessian"] = {
+      "nn/scm-1"
+   },
+   ["nn.test"] = {
+      "nn/scm-1"
+   },
+   ["nn.utils"] = {
+      "nn/scm-1"
+   },
+   ["nn/README.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/containers.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/convolution.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/criterion.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/abs.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/elu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/exp.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/hshrink.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/htanh.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/lena.jpg"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/lenap.jpg"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/logsigmoid.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/logsoftmax.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/parameterflattening.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/parameterflattening.svg"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/power.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/prelu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/relu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/rrelu.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sigmmoid.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sigmoid.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softmax.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softmin.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softplus.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/softsign.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sqrt.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/square.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/sshrink.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/image/tanh.png"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/index.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/module.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/overview.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/simple.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/table.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/testing.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/training.md"] = {
+      "nn/scm-1"
+   },
+   ["nn/doc/transfer.md"] = {
+      "nn/scm-1"
+   },
+   nngraph = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.JustElement"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.JustTable"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.ModuleFromCriterion"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.gmodule"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.graphinspecting"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.nest"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.nesting"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.node"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.simple_print"] = {
+      "nngraph/scm-1"
+   },
+   ["nngraph.utils"] = {
+      "nngraph/scm-1"
+   },
+   nninit = {
+      "nninit/scm-1"
+   },
+   ["nninit.nninit"] = {
+      "nninit/scm-1"
+   },
+   nnx = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Balance"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.CTCCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataList"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataSet"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataSetLabelMe"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DataSetSamplingPascal"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DistMarginCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.DistNLLCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.FunctionWrapper"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.LA"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Minus"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.MultiSoftMax"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Probe"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.PullTable"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.PushTable"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.QDRiemaNNLinear"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SaturatedLU"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SoftMaxTree"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SparseCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialClassifier"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialColorTransform"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialDownSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialFovea"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialGraph"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialLinear"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialMatching"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialMaxSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialNormalization"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialPadding"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialPyramid"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialRadialMatching"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialReSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialReSamplingEx"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialRecursiveFovea"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialSparseCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SpatialUpSampling"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.SuperCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Tic"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.Toc"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.TreeNLLCriterion"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.ZeroGrad"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.test-all"] = {
+      "nnx/0.1-1"
+   },
+   ["nnx.test-omp"] = {
+      "nnx/0.1-1"
+   },
+   optim = {
+      "optim/1.0.5-0"
+   },
+   ["optim.ConfusionMatrix"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.Logger"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adadelta"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adagrad"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adam"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.adamax"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.asgd"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.cg"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.checkgrad"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.cmaes"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.fista"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.lbfgs"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.lswolfe"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.nag"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.polyinterp"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.rmsprop"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.rprop"] = {
+      "optim/1.0.5-0"
+   },
+   ["optim.sgd"] = {
+      "optim/1.0.5-0"
+   },
+   paths = {
+      "paths/scm-1"
+   },
+   pl = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.Date"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.List"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.Map"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.MultiMap"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.OrderedMap"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.Set"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.app"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.array2d"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.class"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.compat"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.comprehension"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.config"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.data"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.dir"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.file"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.func"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.import_into"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.input"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.lapp"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.lexer"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.luabalanced"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.operator"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.path"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.permute"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.pretty"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.seq"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.sip"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.strict"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.stringio"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.stringx"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.tablex"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.template"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.test"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.text"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.types"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.url"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.utils"] = {
+      "penlight/1.3.2-2"
+   },
+   ["pl.xml"] = {
+      "penlight/1.3.2-2"
+   },
+   posix = {
+      "luaposix/33.4.0-1"
+   },
+   ["posix._argcheck"] = {
+      "luaposix/33.4.0-1"
+   },
+   ["posix.compat"] = {
+      "luaposix/33.4.0-1"
+   },
+   ["posix.deprecated"] = {
+      "luaposix/33.4.0-1"
+   },
+   ["posix.sys"] = {
+      "luaposix/33.4.0-1"
+   },
+   ["posix.util"] = {
+      "luaposix/33.4.0-1"
+   },
+   pprint = {
+      "pprint/0-0"
+   },
+   qtcore = {
+      "qtlua/scm-1"
+   },
+   qtgui = {
+      "qtlua/scm-1"
+   },
+   qtide = {
+      "qtlua/scm-1"
+   },
+   ["qtide.prefs"] = {
+      "qtlua/scm-1"
+   },
+   ["qtide/prefs.ui"] = {
+      "qtlua/scm-1"
+   },
+   qtsvg = {
+      "qtlua/scm-1"
+   },
+   qttorch = {
+      "qttorch/scm-1"
+   },
+   ["qttorch/doc/README.md"] = {
+      "qttorch/scm-1"
+   },
+   qtuiloader = {
+      "qtlua/scm-1"
+   },
+   ["qtuiloader.test"] = {
+      "qtlua/scm-1"
+   },
+   ["qtuiloader/test.ui"] = {
+      "qtlua/scm-1"
+   },
+   qtwidget = {
+      "qtlua/scm-1"
+   },
+   readline = {
+      "trepl/scm-1"
+   },
+   rlenvs = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.Acrobot"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.Atari"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.Blackjack"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.CartPole"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.Catch"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.CliffWalking"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.DynaMaze"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.Env"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.GridWorld"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.JacksCarRental"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.MountainCar"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.MultiArmedBandit"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.RandomWalk"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.Taxi"] = {
+      "rlenvs/scm-1"
+   },
+   ["rlenvs.WindyWorld"] = {
+      "rlenvs/scm-1"
+   },
+   rnn = {
+      "rnn/scm-1"
+   },
+   ["rnn.AbstractRecurrent"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.AbstractSequencer"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.BiSequencer"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.BiSequencerLM"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.CopyGrad"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Dropout"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.FastLSTM"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.GRU"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.LSTM"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.LinearNoBias"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.LookupTableMaskZero"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.MaskZero"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.MaskZeroCriterion"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Module"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.NormStabilizer"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Padding"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Recurrence"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Recurrent"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.RecurrentAttention"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Recursor"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Repeater"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.RepeaterCriterion"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.SAdd"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.SeqBRNN"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.SeqGRU"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.SeqLSTM"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.SeqReverseSequence"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.Sequencer"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.SequencerCriterion"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.TrimZero"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.ZeroGrad"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.recursiveUtils"] = {
+      "rnn/scm-1"
+   },
+   ["rnn.test"] = {
+      "rnn/scm-1"
+   },
+   ["rnn/mnistsample.t7"] = {
+      "rnn/scm-1"
+   },
+   signal = {
+      "signal/scm-1"
+   },
+   ["signal.complex"] = {
+      "signal/scm-1"
+   },
+   ["signal.convolution"] = {
+      "signal/scm-1"
+   },
+   ["signal.extramath"] = {
+      "signal/scm-1"
+   },
+   ["signal.ffi"] = {
+      "signal/scm-1"
+   },
+   ["signal.fft"] = {
+      "signal/scm-1"
+   },
+   ["signal.wavelet"] = {
+      "signal/scm-1"
+   },
+   socket = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.core"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.ftp"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.headers"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.http"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.serial"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.smtp"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.tp"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.unix"] = {
+      "luasocket/3.0rc1-2"
+   },
+   ["socket.url"] = {
+      "luasocket/3.0rc1-2"
+   },
+   sundown = {
+      "sundown/scm-1"
+   },
+   ["sundown.ascii"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.env"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.html"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.htmlcdefs"] = {
+      "sundown/scm-1"
+   },
+   ["sundown.sdcdefs"] = {
+      "sundown/scm-1"
+   },
+   sys = {
+      "sys/1.1-0"
+   },
+   ["sys.colors"] = {
+      "sys/1.1-0"
+   },
+   ["sys.fpath"] = {
+      "sys/1.1-0"
+   },
+   tds = {
+      "tds/scm-1"
+   },
+   ["tds.atomic"] = {
+      "tds/scm-1"
+   },
+   ["tds.cdefs"] = {
+      "tds/scm-1"
+   },
+   ["tds.elem"] = {
+      "tds/scm-1"
+   },
+   ["tds.env"] = {
+      "tds/scm-1"
+   },
+   ["tds.hash"] = {
+      "tds/scm-1"
+   },
+   ["tds.vec"] = {
+      "tds/scm-1"
+   },
+   threads = {
+      "threads/scm-1"
+   },
+   ["threads.queue"] = {
+      "threads/scm-1"
+   },
+   ["threads.serialize"] = {
+      "threads/scm-1"
+   },
+   ["threads.sharedserialize"] = {
+      "threads/scm-1"
+   },
+   ["threads.threads"] = {
+      "threads/scm-1"
+   },
+   torch = {
+      "torch/scm-1"
+   },
+   ["torch.CmdLine"] = {
+      "torch/scm-1"
+   },
+   ["torch.FFI"] = {
+      "torch/scm-1"
+   },
+   ["torch.File"] = {
+      "torch/scm-1"
+   },
+   ["torch.Tensor"] = {
+      "torch/scm-1"
+   },
+   ["torch.TestSuite"] = {
+      "torch/scm-1"
+   },
+   ["torch.Tester"] = {
+      "torch/scm-1"
+   },
+   ["torch.test"] = {
+      "torch/scm-1"
+   },
+   ["torch/README.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/cmdline.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/diskfile.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/file.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/gather.png"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/index.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/maths.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/memoryfile.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/pipefile.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/random.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/serialization.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/storage.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/tensor.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/tester.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/timer.md"] = {
+      "torch/scm-1"
+   },
+   ["torch/doc/utility.md"] = {
+      "torch/scm-1"
+   },
+   torchx = {
+      "torchx/scm-1"
+   },
+   ["torchx.AliasMultinomial"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.MultiCudaTensor"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.Queue"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.concat"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.dkjson"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.extend"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.find"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.group"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.indexdir"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.md5"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.recursivetensor"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.remap"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.test"] = {
+      "torchx/scm-1"
+   },
+   ["torchx.treemax"] = {
+      "torchx/scm-1"
+   },
+   totem = {
+      "totem/0-0"
+   },
+   ["totem.TestSuite"] = {
+      "totem/0-0"
+   },
+   ["totem.Tester"] = {
+      "totem/0-0"
+   },
+   ["totem.asserts"] = {
+      "totem/0-0"
+   },
+   ["totem.examples.test_nn"] = {
+      "totem/0-0"
+   },
+   ["totem.examples.test_simple"] = {
+      "totem/0-0"
+   },
+   ["totem.examples.test_tensor"] = {
+      "totem/0-0"
+   },
+   ["totem.nn"] = {
+      "totem/0-0"
+   },
+   trepl = {
+      "trepl/scm-1"
+   },
+   ["trepl.colorize"] = {
+      "trepl/scm-1"
+   },
+   ["trepl.colors"] = {
+      "trepl/scm-1"
+   },
+   treplutils = {
+      "trepl/scm-1"
+   },
+   unsup = {
+      "unsup/0.1-0"
+   },
+   ["unsup.AutoEncoder"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.ConvPsd"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.Diag"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.FistaL1"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.LinearFistaL1"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.LinearPsd"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.SparseAutoEncoder"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.SpatialConvFistaL1"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.UnsupModule"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.UnsupTrainer"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.kmeans"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.pca"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.psd"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.topo-kmeans"] = {
+      "unsup/0.1-0"
+   },
+   ["unsup.whitening"] = {
+      "unsup/0.1-0"
+   },
+   util = {
+      "util/0-0"
+   },
+   ["util.CSVFile"] = {
+      "util/0-0"
+   },
+   ["util.arg"] = {
+      "util/0-0"
+   },
+   ["util.file"] = {
+      "util/0-0"
+   },
+   ["util.nan"] = {
+      "util/0-0"
+   },
+   ["util.queue"] = {
+      "util/0-0"
+   },
+   ["util.warn"] = {
+      "util/0-0"
+   },
+   ["util.warnself"] = {
+      "util/0-0"
+   },
+   xlua = {
+      "xlua/1.1-0"
+   },
+   ["xlua.OptionParser"] = {
+      "xlua/1.1-0"
+   },
+   ["xlua.Profiler"] = {
+      "xlua/1.1-0"
+   },
+   yaml = {
+      "yaml/1.1.2-1"
+   },
+   ["yaml.core"] = {
+      "yaml/1.1.2-1"
+   }
+}
+repository = {
+   alewrap = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               dok = "scm-1",
+               image = "1.1.alpha-0",
+               paths = "scm-1",
+               sundown = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xitari = "0-0",
+               xlua = "1.1-0"
+            },
+            modules = {
+               alewrap = "alewrap/init.lua",
+               ["alewrap.AleEnv"] = "alewrap/AleEnv.lua",
+               ["alewrap.AtariLayer"] = "alewrap/AtariLayer.lua",
+               ["alewrap.GameEnvironment"] = "alewrap/GameEnvironment.lua",
+               ["alewrap.GameScreen"] = "alewrap/GameScreen.lua",
+               ["alewrap.aleffi"] = "alewrap/aleffi.lua",
+               ["alewrap/alewrap.inl"] = "alewrap/alewrap.inl",
+               libalewrap = "libalewrap.so"
+            }
+         }
+      }
+   },
+   argcheck = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               sundown = "scm-1"
+            },
+            modules = {
+               argcheck = "argcheck/init.lua",
+               ["argcheck.doc"] = "argcheck/doc.lua",
+               ["argcheck.dump"] = "argcheck/dump.lua",
+               ["argcheck.env"] = "argcheck/env.lua",
+               ["argcheck.graph"] = "argcheck/graph.lua",
+               ["argcheck.usage"] = "argcheck/usage.lua",
+               ["argcheck.utils"] = "argcheck/utils.lua"
+            }
+         }
+      }
+   },
+   bit32 = {
+      ["5.3.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               bit32 = "bit32.so"
+            }
+         }
+      }
+   },
+   classic = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               graph = "scm-1",
+               luaffi = "scm-1",
+               luafilesystem = "1.6.3-2",
+               nn = "scm-1",
+               nngraph = "scm-1",
+               paths = "scm-1",
+               penlight = "1.3.2-2",
+               sys = "1.1-0",
+               torch = "scm-1",
+               totem = "0-0"
+            },
+            modules = {
+               classic = "classic/init.lua",
+               ["classic.Class"] = "classic/Class.lua",
+               ["classic.Module"] = "classic/Module.lua",
+               ["classic.tests.class.common"] = "classic/tests/class/common.lua",
+               ["classic.tests.class.definitions"] = "classic/tests/class/definitions.lua",
+               ["classic.tests.class.utils"] = "classic/tests/class/utils.lua",
+               ["classic.tests.module.test"] = "classic/tests/module/test.lua",
+               ["classic.torch"] = "classic/torch/init.lua"
+            }
+         }
+      }
+   },
+   cudnn = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cutorch = "scm-1",
+               cwrap = "scm-1",
+               luaffi = "scm-1",
+               nn = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               cudnn = "cudnn/init.lua",
+               ["cudnn.BLSTM"] = "cudnn/BLSTM.lua",
+               ["cudnn.BatchNormalization"] = "cudnn/BatchNormalization.lua",
+               ["cudnn.ClippedReLU"] = "cudnn/ClippedReLU.lua",
+               ["cudnn.GRU"] = "cudnn/GRU.lua",
+               ["cudnn.LSTM"] = "cudnn/LSTM.lua",
+               ["cudnn.LogSoftMax"] = "cudnn/LogSoftMax.lua",
+               ["cudnn.Pointwise"] = "cudnn/Pointwise.lua",
+               ["cudnn.Pooling"] = "cudnn/Pooling.lua",
+               ["cudnn.Pooling3D"] = "cudnn/Pooling3D.lua",
+               ["cudnn.RNN"] = "cudnn/RNN.lua",
+               ["cudnn.RNNReLU"] = "cudnn/RNNReLU.lua",
+               ["cudnn.RNNTanh"] = "cudnn/RNNTanh.lua",
+               ["cudnn.ReLU"] = "cudnn/ReLU.lua",
+               ["cudnn.Sigmoid"] = "cudnn/Sigmoid.lua",
+               ["cudnn.SoftMax"] = "cudnn/SoftMax.lua",
+               ["cudnn.SpatialAveragePooling"] = "cudnn/SpatialAveragePooling.lua",
+               ["cudnn.SpatialBatchNormalization"] = "cudnn/SpatialBatchNormalization.lua",
+               ["cudnn.SpatialConvolution"] = "cudnn/SpatialConvolution.lua",
+               ["cudnn.SpatialCrossEntropyCriterion"] = "cudnn/SpatialCrossEntropyCriterion.lua",
+               ["cudnn.SpatialCrossMapLRN"] = "cudnn/SpatialCrossMapLRN.lua",
+               ["cudnn.SpatialDivisiveNormalization"] = "cudnn/SpatialDivisiveNormalization.lua",
+               ["cudnn.SpatialFullConvolution"] = "cudnn/SpatialFullConvolution.lua",
+               ["cudnn.SpatialLogSoftMax"] = "cudnn/SpatialLogSoftMax.lua",
+               ["cudnn.SpatialMaxPooling"] = "cudnn/SpatialMaxPooling.lua",
+               ["cudnn.SpatialSoftMax"] = "cudnn/SpatialSoftMax.lua",
+               ["cudnn.Tanh"] = "cudnn/Tanh.lua",
+               ["cudnn.TemporalConvolution"] = "cudnn/TemporalConvolution.lua",
+               ["cudnn.VolumetricAveragePooling"] = "cudnn/VolumetricAveragePooling.lua",
+               ["cudnn.VolumetricBatchNormalization"] = "cudnn/VolumetricBatchNormalization.lua",
+               ["cudnn.VolumetricConvolution"] = "cudnn/VolumetricConvolution.lua",
+               ["cudnn.VolumetricMaxPooling"] = "cudnn/VolumetricMaxPooling.lua",
+               ["cudnn.convert"] = "cudnn/convert.lua",
+               ["cudnn.env"] = "cudnn/env.lua",
+               ["cudnn.ffi"] = "cudnn/ffi.lua",
+               ["cudnn.functional"] = "cudnn/functional.lua"
+            }
+         }
+      }
+   },
+   cunn = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cutorch = "scm-1",
+               cwrap = "scm-1",
+               luaffi = "scm-1",
+               nn = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               cunn = "cunn/init.lua",
+               ["cunn.DataParallelTable"] = "cunn/DataParallelTable.lua",
+               ["cunn.THCUNN"] = "cunn/THCUNN.lua",
+               ["cunn.THCUNN_h"] = "cunn/THCUNN_h.lua",
+               ["cunn.test"] = "cunn/test.lua",
+               ["cunn.test_DataParallelTable"] = "cunn/test_DataParallelTable.lua",
+               libTHCUNN = "libTHCUNN.so"
+            }
+         }
+      }
+   },
+   cunnx = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cunn = "scm-1",
+               cutorch = "scm-1",
+               cwrap = "scm-1",
+               luaffi = "scm-1",
+               nn = "scm-1",
+               nnx = "0.1-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               cunnx = "cunnx/init.lua",
+               ["cunnx.BlockMixture"] = "cunnx/BlockMixture.lua",
+               ["cunnx.BlockSparse"] = "cunnx/BlockSparse.lua",
+               ["cunnx.LazyKBest"] = "cunnx/LazyKBest.lua",
+               ["cunnx.LinearNoBias"] = "cunnx/LinearNoBias.lua",
+               ["cunnx.MultinomialStatistics"] = "cunnx/MultinomialStatistics.lua",
+               ["cunnx.NoisyReLU"] = "cunnx/NoisyReLU.lua",
+               ["cunnx.Sort"] = "cunnx/Sort.lua",
+               ["cunnx.TypeDecorator"] = "cunnx/TypeDecorator.lua",
+               ["cunnx.WindowGate"] = "cunnx/WindowGate.lua",
+               ["cunnx.WindowGate2"] = "cunnx/WindowGate2.lua",
+               ["cunnx.WindowMixture"] = "cunnx/WindowMixture.lua",
+               ["cunnx.WindowSparse"] = "cunnx/WindowSparse.lua",
+               ["cunnx.test"] = "cunnx/test.lua",
+               libcunnx = "libcunnx.so"
+            }
+         }
+      }
+   },
+   cutorch = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               cutorch = "cutorch/init.lua",
+               ["cutorch.FFI"] = "cutorch/FFI.lua",
+               ["cutorch.Tensor"] = "cutorch/Tensor.lua",
+               ["cutorch.test"] = "cutorch/test.lua",
+               libcutorch = "libcutorch.so"
+            }
+         }
+      }
+   },
+   cwrap = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               cwrap = "cwrap/init.lua",
+               ["cwrap.cinterface"] = "cwrap/cinterface.lua",
+               ["cwrap.types"] = "cwrap/types.lua",
+               ["cwrap/README.md"] = "cwrap/README.md"
+            }
+         }
+      }
+   },
+   dataprovider = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               DataProvider = "DataProvider/init.lua",
+               ["DataProvider.Container"] = "DataProvider/Container.lua",
+               ["DataProvider.FileSearcher"] = "DataProvider/FileSearcher.lua",
+               ["DataProvider.LMDBProvider"] = "DataProvider/LMDBProvider.lua",
+               ["DataProvider.MultiThreaded"] = "DataProvider/MultiThreaded.lua",
+               ["DataProvider.test"] = "DataProvider/test.lua"
+            }
+         }
+      }
+   },
+   dok = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               sundown = "scm-1"
+            },
+            modules = {
+               dok = "dok/init.lua",
+               ["dok.inline"] = "dok/inline.lua"
+            }
+         }
+      }
+   },
+   dp = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               dok = "scm-1",
+               dpnn = "scm-1",
+               image = "1.1.alpha-0",
+               luaffi = "scm-1",
+               luafilesystem = "1.6.3-2",
+               moses = "1.4.0-1",
+               nn = "scm-1",
+               nnx = "0.1-1",
+               optim = "1.0.5-0",
+               paths = "scm-1",
+               sundown = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               torchx = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               dp = "dp/init.lua",
+               ["dp.data.baseset"] = "dp/data/baseset.lua",
+               ["dp.data.batch"] = "dp/data/batch.lua",
+               ["dp.data.billionwords"] = "dp/data/billionwords.lua",
+               ["dp.data.cifar10"] = "dp/data/cifar10.lua",
+               ["dp.data.cifar100"] = "dp/data/cifar100.lua",
+               ["dp.data.dataset"] = "dp/data/dataset.lua",
+               ["dp.data.datasource"] = "dp/data/datasource.lua",
+               ["dp.data.facedetection"] = "dp/data/facedetection.lua",
+               ["dp.data.facialkeypoints"] = "dp/data/facialkeypoints.lua",
+               ["dp.data.imageclassset"] = "dp/data/imageclassset.lua",
+               ["dp.data.imagenet"] = "dp/data/imagenet.lua",
+               ["dp.data.imagesource"] = "dp/data/imagesource.lua",
+               ["dp.data.mnist"] = "dp/data/mnist.lua",
+               ["dp.data.notmnist"] = "dp/data/notmnist.lua",
+               ["dp.data.penntreebank"] = "dp/data/penntreebank.lua",
+               ["dp.data.sentenceset"] = "dp/data/sentenceset.lua",
+               ["dp.data.smallimagesource"] = "dp/data/smallimagesource.lua",
+               ["dp.data.svhn"] = "dp/data/svhn.lua",
+               ["dp.data.textset"] = "dp/data/textset.lua",
+               ["dp.data.textsource"] = "dp/data/textsource.lua",
+               ["dp.data.translatedmnist"] = "dp/data/translatedmnist.lua",
+               ["dp.examples.alexnet"] = "dp/examples/alexnet.lua",
+               ["dp.examples.convolutionneuralnetwork"] = "dp/examples/convolutionneuralnetwork.lua",
+               ["dp.examples.deepinception"] = "dp/examples/deepinception.lua",
+               ["dp.examples.facialkeypointdetector"] = "dp/examples/facialkeypointdetector.lua",
+               ["dp.examples.fkdbaseline"] = "dp/examples/fkdbaseline.lua",
+               ["dp.examples.languagemodel"] = "dp/examples/languagemodel.lua",
+               ["dp.examples.mixtureofexperts"] = "dp/examples/mixtureofexperts.lua",
+               ["dp.examples.neuralnetwork"] = "dp/examples/neuralnetwork.lua",
+               ["dp.examples.recurrentlanguagemodel"] = "dp/examples/recurrentlanguagemodel.lua",
+               ["dp.feedback.compositefeedback"] = "dp/feedback/compositefeedback.lua",
+               ["dp.feedback.confusion"] = "dp/feedback/confusion.lua",
+               ["dp.feedback.criteria"] = "dp/feedback/criteria.lua",
+               ["dp.feedback.facialkeypointfeedback"] = "dp/feedback/facialkeypointfeedback.lua",
+               ["dp.feedback.feedback"] = "dp/feedback/feedback.lua",
+               ["dp.feedback.fkdkaggle"] = "dp/feedback/fkdkaggle.lua",
+               ["dp.feedback.perplexity"] = "dp/feedback/perplexity.lua",
+               ["dp.feedback.topcrop"] = "dp/feedback/topcrop.lua",
+               ["dp.mediator"] = "dp/mediator.lua",
+               ["dp.nn.FairLookupTable"] = "dp/nn/FairLookupTable.lua",
+               ["dp.nn.Print"] = "dp/nn/Print.lua",
+               ["dp.objectid"] = "dp/objectid.lua",
+               ["dp.observer.adaptivedecay"] = "dp/observer/adaptivedecay.lua",
+               ["dp.observer.compositeobserver"] = "dp/observer/compositeobserver.lua",
+               ["dp.observer.earlystopper"] = "dp/observer/earlystopper.lua",
+               ["dp.observer.errorminima"] = "dp/observer/errorminima.lua",
+               ["dp.observer.filelogger"] = "dp/observer/filelogger.lua",
+               ["dp.observer.hyperlog"] = "dp/observer/hyperlog.lua",
+               ["dp.observer.logger"] = "dp/observer/logger.lua",
+               ["dp.observer.observer"] = "dp/observer/observer.lua",
+               ["dp.observer.savetofile"] = "dp/observer/savetofile.lua",
+               ["dp.preprocess.binarize"] = "dp/preprocess/binarize.lua",
+               ["dp.preprocess.gcn"] = "dp/preprocess/gcn.lua",
+               ["dp.preprocess.lecunlcn"] = "dp/preprocess/lecunlcn.lua",
+               ["dp.preprocess.parallelpreprocess"] = "dp/preprocess/parallelpreprocess.lua",
+               ["dp.preprocess.pipeline"] = "dp/preprocess/pipeline.lua",
+               ["dp.preprocess.preprocess"] = "dp/preprocess/preprocess.lua",
+               ["dp.preprocess.standardize"] = "dp/preprocess/standardize.lua",
+               ["dp.preprocess.zca"] = "dp/preprocess/zca.lua",
+               ["dp.propagator.evaluator"] = "dp/propagator/evaluator.lua",
+               ["dp.propagator.experiment"] = "dp/propagator/experiment.lua",
+               ["dp.propagator.optimizer"] = "dp/propagator/optimizer.lua",
+               ["dp.propagator.propagator"] = "dp/propagator/propagator.lua",
+               ["dp.sampler.randomsampler"] = "dp/sampler/randomsampler.lua",
+               ["dp.sampler.sampler"] = "dp/sampler/sampler.lua",
+               ["dp.sampler.sentencesampler"] = "dp/sampler/sentencesampler.lua",
+               ["dp.sampler.shufflesampler"] = "dp/sampler/shufflesampler.lua",
+               ["dp.sampler.textsampler"] = "dp/sampler/textsampler.lua",
+               ["dp.scripts.downloadimagenet"] = "dp/scripts/downloadimagenet.lua",
+               ["dp.scripts.generate_mnist_data"] = "dp/scripts/generate_mnist_data.lua",
+               ["dp.scripts.harmonizeimagenet"] = "dp/scripts/harmonizeimagenet.lua",
+               ["dp.scripts.json2table"] = "dp/scripts/json2table.lua",
+               ["dp.scripts.listcollections"] = "dp/scripts/listcollections.lua",
+               ["dp.scripts.plotcurves"] = "dp/scripts/plotcurves.lua",
+               ["dp.scripts.rankbyminima"] = "dp/scripts/rankbyminima.lua",
+               ["dp.scripts.showfilters"] = "dp/scripts/showfilters.lua",
+               ["dp.scripts.trainserialized"] = "dp/scripts/trainserialized.lua",
+               ["dp.test.runtest"] = "dp/test/runtest.lua",
+               ["dp.test.test"] = "dp/test/test.lua",
+               ["dp.test.test-benchmark"] = "dp/test/test-benchmark.lua",
+               ["dp.test.test-cuda"] = "dp/test/test-cuda.lua",
+               ["dp.test.test-datasets"] = "dp/test/test-datasets.lua",
+               ["dp.test.testDataset"] = "dp/test/testDataset.lua",
+               ["dp.test.testDatasetFullSplit"] = "dp/test/testDatasetFullSplit.lua",
+               ["dp.test.testDatasetNoSplit"] = "dp/test/testDatasetNoSplit.lua",
+               ["dp.test.test_imageclassset"] = "dp/test/test_imageclassset.lua",
+               ["dp.utils.os"] = "dp/utils/os.lua",
+               ["dp.utils.table"] = "dp/utils/table.lua",
+               ["dp.utils.torch"] = "dp/utils/torch.lua",
+               ["dp.utils.underscore"] = "dp/utils/underscore.lua",
+               ["dp.utils.utils"] = "dp/utils/utils.lua",
+               ["dp.view.classview"] = "dp/view/classview.lua",
+               ["dp.view.dataview"] = "dp/view/dataview.lua",
+               ["dp.view.imageview"] = "dp/view/imageview.lua",
+               ["dp.view.listview"] = "dp/view/listview.lua",
+               ["dp.view.sequenceview"] = "dp/view/sequenceview.lua",
+               ["dp.view.view"] = "dp/view/view.lua",
+               ["dp.xplog"] = "dp/xplog.lua"
+            }
+         }
+      }
+   },
+   dpnn = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               luaffi = "scm-1",
+               moses = "1.4.0-1",
+               nn = "scm-1",
+               nnx = "0.1-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               dpnn = "dpnn/init.lua",
+               ["dpnn.ArgMax"] = "dpnn/ArgMax.lua",
+               ["dpnn.BatchNormalization"] = "dpnn/BatchNormalization.lua",
+               ["dpnn.BinaryLogisticRegression"] = "dpnn/BinaryLogisticRegression.lua",
+               ["dpnn.CAddTensorTable"] = "dpnn/CAddTensorTable.lua",
+               ["dpnn.CategoricalEntropy"] = "dpnn/CategoricalEntropy.lua",
+               ["dpnn.Clip"] = "dpnn/Clip.lua",
+               ["dpnn.Collapse"] = "dpnn/Collapse.lua",
+               ["dpnn.Constant"] = "dpnn/Constant.lua",
+               ["dpnn.Container"] = "dpnn/Container.lua",
+               ["dpnn.Convert"] = "dpnn/Convert.lua",
+               ["dpnn.Criterion"] = "dpnn/Criterion.lua",
+               ["dpnn.Decorator"] = "dpnn/Decorator.lua",
+               ["dpnn.Dictionary"] = "dpnn/Dictionary.lua",
+               ["dpnn.DontCast"] = "dpnn/DontCast.lua",
+               ["dpnn.FireModule"] = "dpnn/FireModule.lua",
+               ["dpnn.Inception"] = "dpnn/Inception.lua",
+               ["dpnn.Kmeans"] = "dpnn/Kmeans.lua",
+               ["dpnn.LookupTable"] = "dpnn/LookupTable.lua",
+               ["dpnn.Module"] = "dpnn/Module.lua",
+               ["dpnn.ModuleCriterion"] = "dpnn/ModuleCriterion.lua",
+               ["dpnn.NCECriterion"] = "dpnn/NCECriterion.lua",
+               ["dpnn.NCEModule"] = "dpnn/NCEModule.lua",
+               ["dpnn.NaN"] = "dpnn/NaN.lua",
+               ["dpnn.OneHot"] = "dpnn/OneHot.lua",
+               ["dpnn.PCAColorTransform"] = "dpnn/PCAColorTransform.lua",
+               ["dpnn.ParallelTable"] = "dpnn/ParallelTable.lua",
+               ["dpnn.PrintSize"] = "dpnn/PrintSize.lua",
+               ["dpnn.Reinforce"] = "dpnn/Reinforce.lua",
+               ["dpnn.ReinforceBernoulli"] = "dpnn/ReinforceBernoulli.lua",
+               ["dpnn.ReinforceCategorical"] = "dpnn/ReinforceCategorical.lua",
+               ["dpnn.ReinforceGamma"] = "dpnn/ReinforceGamma.lua",
+               ["dpnn.ReinforceNormal"] = "dpnn/ReinforceNormal.lua",
+               ["dpnn.ReverseTable"] = "dpnn/ReverseTable.lua",
+               ["dpnn.Sequential"] = "dpnn/Sequential.lua",
+               ["dpnn.Serial"] = "dpnn/Serial.lua",
+               ["dpnn.SimpleColorTransform"] = "dpnn/SimpleColorTransform.lua",
+               ["dpnn.SoftMaxForest"] = "dpnn/SoftMaxForest.lua",
+               ["dpnn.SoftMaxTree"] = "dpnn/SoftMaxTree.lua",
+               ["dpnn.SpatialBatchNormalization"] = "dpnn/SpatialBatchNormalization.lua",
+               ["dpnn.SpatialBinaryConvolution"] = "dpnn/SpatialBinaryConvolution.lua",
+               ["dpnn.SpatialBinaryLogisticRegression"] = "dpnn/SpatialBinaryLogisticRegression.lua",
+               ["dpnn.SpatialConvolution"] = "dpnn/SpatialConvolution.lua",
+               ["dpnn.SpatialConvolutionMM"] = "dpnn/SpatialConvolutionMM.lua",
+               ["dpnn.SpatialFeatNormalization"] = "dpnn/SpatialFeatNormalization.lua",
+               ["dpnn.SpatialGlimpse"] = "dpnn/SpatialGlimpse.lua",
+               ["dpnn.SpatialMaxPooling"] = "dpnn/SpatialMaxPooling.lua",
+               ["dpnn.SpatialRegionDropout"] = "dpnn/SpatialRegionDropout.lua",
+               ["dpnn.SpatialUniformCrop"] = "dpnn/SpatialUniformCrop.lua",
+               ["dpnn.TotalDropout"] = "dpnn/TotalDropout.lua",
+               ["dpnn.VRClassReward"] = "dpnn/VRClassReward.lua",
+               ["dpnn.WhiteNoise"] = "dpnn/WhiteNoise.lua",
+               ["dpnn.ZipTable"] = "dpnn/ZipTable.lua",
+               ["dpnn.ZipTableOneToMany"] = "dpnn/ZipTableOneToMany.lua",
+               ["dpnn.test"] = "dpnn/test.lua"
+            }
+         }
+      }
+   },
+   env = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               dok = "scm-1",
+               gnuplot = "scm-1",
+               paths = "scm-1",
+               sundown = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               env = "env/init.lua"
+            }
+         }
+      }
+   },
+   fftw3 = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               fftw3 = "fftw3/init.lua",
+               ["fftw3.cdefs"] = "fftw3/cdefs.lua",
+               ["fftw3.defines"] = "fftw3/defines.lua"
+            }
+         }
+      }
+   },
+   fn = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               graph = "scm-1",
+               luaffi = "scm-1",
+               luafilesystem = "1.6.3-2",
+               nn = "scm-1",
+               nngraph = "scm-1",
+               paths = "scm-1",
+               penlight = "1.3.2-2",
+               sys = "1.1-0",
+               torch = "scm-1",
+               totem = "0-0",
+               util = "0-0"
+            },
+            modules = {
+               fn = "fn/init.lua",
+               ["fn.seq"] = "fn/seq.lua"
+            }
+         }
+      }
+   },
+   gnuplot = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               gnuplot = "gnuplot/init.lua",
+               ["gnuplot.gnuplot"] = "gnuplot/gnuplot.lua",
+               ["gnuplot.hist"] = "gnuplot/hist.lua",
+               ["gnuplot/README.md"] = "gnuplot/README.md",
+               ["gnuplot/doc/plot_filled.png"] = "gnuplot/doc/plot_filled.png",
+               ["gnuplot/doc/plot_hist.png"] = "gnuplot/doc/plot_hist.png",
+               ["gnuplot/doc/plot_imagesc.png"] = "gnuplot/doc/plot_imagesc.png",
+               ["gnuplot/doc/plot_sincos.png"] = "gnuplot/doc/plot_sincos.png",
+               ["gnuplot/doc/plot_splot.png"] = "gnuplot/doc/plot_splot.png",
+               ["gnuplot/doc/plot_splot2.png"] = "gnuplot/doc/plot_splot2.png",
+               ["gnuplot/doc/plot_x.png"] = "gnuplot/doc/plot_x.png",
+               ["gnuplot/doc/plot_xyf.png"] = "gnuplot/doc/plot_xyf.png"
+            }
+         }
+      }
+   },
+   graph = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               graph = "graph/init.lua",
+               ["graph.Edge"] = "graph/Edge.lua",
+               ["graph.Node"] = "graph/Node.lua",
+               ["graph.graphviz"] = "graph/graphviz.lua"
+            }
+         }
+      }
+   },
+   graphicsmagick = {
+      ["1.scm-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               dok = "scm-1",
+               image = "1.1.alpha-0",
+               paths = "scm-1",
+               sundown = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               graphicsmagick = "graphicsmagick/init.lua",
+               ["graphicsmagick.Image"] = "graphicsmagick/Image.lua",
+               ["graphicsmagick.convert"] = "graphicsmagick/convert.lua",
+               ["graphicsmagick.exif"] = "graphicsmagick/exif.lua",
+               ["graphicsmagick.info"] = "graphicsmagick/info.lua"
+            }
+         }
+      }
+   },
+   image = {
+      ["1.1.alpha-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               dok = "scm-1",
+               paths = "scm-1",
+               sundown = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               image = "image/init.lua",
+               ["image.test"] = "image/test.lua",
+               ["image/README.md"] = "image/README.md",
+               ["image/assets/P2.pgm"] = "image/assets/P2.pgm",
+               ["image/assets/P4.pbm"] = "image/assets/P4.pbm",
+               ["image/assets/P5.pgm"] = "image/assets/P5.pgm",
+               ["image/assets/P6.ppm"] = "image/assets/P6.ppm",
+               ["image/assets/corrupt-ihdr.png"] = "image/assets/corrupt-ihdr.png",
+               ["image/assets/fabio.jpg"] = "image/assets/fabio.jpg",
+               ["image/assets/fabio.png"] = "image/assets/fabio.png",
+               ["image/assets/foobar.png"] = "image/assets/foobar.png",
+               ["image/assets/gray16-1x2.png"] = "image/assets/gray16-1x2.png",
+               ["image/assets/gray3x1.png"] = "image/assets/gray3x1.png",
+               ["image/assets/lena.jpg"] = "image/assets/lena.jpg",
+               ["image/assets/lena.png"] = "image/assets/lena.png",
+               ["image/assets/rgb16-2x1.png"] = "image/assets/rgb16-2x1.png",
+               ["image/assets/rgb2x1.png"] = "image/assets/rgb2x1.png",
+               ["image/win.ui"] = "image/win.ui",
+               libimage = "libimage.so",
+               libjpeg = "libjpeg.so",
+               libpng = "libpng.so",
+               libppm = "libppm.so"
+            }
+         }
+      }
+   },
+   logroll = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               fn = "0-0",
+               graph = "scm-1",
+               luaffi = "scm-1",
+               luafilesystem = "1.6.3-2",
+               nn = "scm-1",
+               nngraph = "scm-1",
+               paths = "scm-1",
+               penlight = "1.3.2-2",
+               pprint = "0-0",
+               sys = "1.1-0",
+               torch = "scm-1",
+               totem = "0-0",
+               util = "0-0"
+            },
+            modules = {
+               logroll = "logroll/init.lua"
+            }
+         }
+      }
+   },
+   ["lua-cjson"] = {
+      ["2.1devel-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               json2lua = "json2lua",
+               lua2json = "lua2json"
+            },
+            dependencies = {},
+            modules = {
+               cjson = "cjson.so",
+               ["cjson.util"] = "cjson/util.lua",
+               json2lua = "json2lua.lua",
+               lua2json = "lua2json.lua"
+            }
+         }
+      }
+   },
+   luaffi = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ffi = "ffi.so"
+            }
+         }
+      }
+   },
+   luafilesystem = {
+      ["1.6.3-2"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               lfs = "lfs.so"
+            }
+         }
+      }
+   },
+   luagd = {
+      ["2.0.33r3-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               gd = "gd.so"
+            }
+         }
+      }
+   },
+   luaposix = {
+      ["33.4.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               bit32 = "5.3.0-1"
+            },
+            modules = {
+               posix = "posix/init.lua",
+               ["posix._argcheck"] = "posix/_argcheck.lua",
+               ["posix.compat"] = "posix/compat.lua",
+               ["posix.deprecated"] = "posix/deprecated.lua",
+               ["posix.sys"] = "posix/sys.lua",
+               ["posix.util"] = "posix/util.lua"
+            }
+         }
+      }
+   },
+   luasocket = {
+      ["3.0rc1-2"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ltn12 = "ltn12.lua",
+               mime = "mime.lua",
+               ["mime.core"] = "mime/core.so",
+               socket = "socket.lua",
+               ["socket.core"] = "socket/core.so",
+               ["socket.ftp"] = "socket/ftp.lua",
+               ["socket.headers"] = "socket/headers.lua",
+               ["socket.http"] = "socket/http.lua",
+               ["socket.serial"] = "socket/serial.so",
+               ["socket.smtp"] = "socket/smtp.lua",
+               ["socket.tp"] = "socket/tp.lua",
+               ["socket.unix"] = "socket/unix.so",
+               ["socket.url"] = "socket/url.lua"
+            }
+         }
+      }
+   },
+   lub = {
+      ["1.1.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               luafilesystem = "1.6.3-2"
+            },
+            modules = {
+               lub = "lub/init.lua",
+               ["lub.Autoload"] = "lub/Autoload.lua",
+               ["lub.Dir"] = "lub/Dir.lua",
+               ["lub.Param"] = "lub/Param.lua",
+               ["lub.Template"] = "lub/Template.lua"
+            }
+         }
+      }
+   },
+   moses = {
+      ["1.4.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               moses = "moses.lua",
+               moses_min = "moses_min.lua"
+            }
+         }
+      }
+   },
+   nn = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               luaffi = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               libTHNN = "libTHNN.so",
+               nn = "nn/init.lua",
+               ["nn.Abs"] = "nn/Abs.lua",
+               ["nn.AbsCriterion"] = "nn/AbsCriterion.lua",
+               ["nn.Add"] = "nn/Add.lua",
+               ["nn.AddConstant"] = "nn/AddConstant.lua",
+               ["nn.BCECriterion"] = "nn/BCECriterion.lua",
+               ["nn.BatchNormalization"] = "nn/BatchNormalization.lua",
+               ["nn.Bilinear"] = "nn/Bilinear.lua",
+               ["nn.CAddTable"] = "nn/CAddTable.lua",
+               ["nn.CDivTable"] = "nn/CDivTable.lua",
+               ["nn.CMul"] = "nn/CMul.lua",
+               ["nn.CMulTable"] = "nn/CMulTable.lua",
+               ["nn.CSubTable"] = "nn/CSubTable.lua",
+               ["nn.Clamp"] = "nn/Clamp.lua",
+               ["nn.ClassNLLCriterion"] = "nn/ClassNLLCriterion.lua",
+               ["nn.ClassSimplexCriterion"] = "nn/ClassSimplexCriterion.lua",
+               ["nn.Concat"] = "nn/Concat.lua",
+               ["nn.ConcatTable"] = "nn/ConcatTable.lua",
+               ["nn.Container"] = "nn/Container.lua",
+               ["nn.Contiguous"] = "nn/Contiguous.lua",
+               ["nn.Copy"] = "nn/Copy.lua",
+               ["nn.Cosine"] = "nn/Cosine.lua",
+               ["nn.CosineDistance"] = "nn/CosineDistance.lua",
+               ["nn.CosineEmbeddingCriterion"] = "nn/CosineEmbeddingCriterion.lua",
+               ["nn.Criterion"] = "nn/Criterion.lua",
+               ["nn.CriterionTable"] = "nn/CriterionTable.lua",
+               ["nn.CrossEntropyCriterion"] = "nn/CrossEntropyCriterion.lua",
+               ["nn.DepthConcat"] = "nn/DepthConcat.lua",
+               ["nn.DistKLDivCriterion"] = "nn/DistKLDivCriterion.lua",
+               ["nn.DotProduct"] = "nn/DotProduct.lua",
+               ["nn.Dropout"] = "nn/Dropout.lua",
+               ["nn.ELU"] = "nn/ELU.lua",
+               ["nn.ErrorMessages"] = "nn/ErrorMessages.lua",
+               ["nn.Euclidean"] = "nn/Euclidean.lua",
+               ["nn.Exp"] = "nn/Exp.lua",
+               ["nn.FlattenTable"] = "nn/FlattenTable.lua",
+               ["nn.GradientReversal"] = "nn/GradientReversal.lua",
+               ["nn.HardShrink"] = "nn/HardShrink.lua",
+               ["nn.HardTanh"] = "nn/HardTanh.lua",
+               ["nn.HingeEmbeddingCriterion"] = "nn/HingeEmbeddingCriterion.lua",
+               ["nn.Identity"] = "nn/Identity.lua",
+               ["nn.Index"] = "nn/Index.lua",
+               ["nn.Jacobian"] = "nn/Jacobian.lua",
+               ["nn.JoinTable"] = "nn/JoinTable.lua",
+               ["nn.L1Cost"] = "nn/L1Cost.lua",
+               ["nn.L1HingeEmbeddingCriterion"] = "nn/L1HingeEmbeddingCriterion.lua",
+               ["nn.L1Penalty"] = "nn/L1Penalty.lua",
+               ["nn.LeakyReLU"] = "nn/LeakyReLU.lua",
+               ["nn.Linear"] = "nn/Linear.lua",
+               ["nn.Log"] = "nn/Log.lua",
+               ["nn.LogSigmoid"] = "nn/LogSigmoid.lua",
+               ["nn.LogSoftMax"] = "nn/LogSoftMax.lua",
+               ["nn.LookupTable"] = "nn/LookupTable.lua",
+               ["nn.MM"] = "nn/MM.lua",
+               ["nn.MSECriterion"] = "nn/MSECriterion.lua",
+               ["nn.MV"] = "nn/MV.lua",
+               ["nn.MarginCriterion"] = "nn/MarginCriterion.lua",
+               ["nn.MarginRankingCriterion"] = "nn/MarginRankingCriterion.lua",
+               ["nn.MaskedSelect"] = "nn/MaskedSelect.lua",
+               ["nn.Max"] = "nn/Max.lua",
+               ["nn.Mean"] = "nn/Mean.lua",
+               ["nn.Min"] = "nn/Min.lua",
+               ["nn.MixtureTable"] = "nn/MixtureTable.lua",
+               ["nn.Module"] = "nn/Module.lua",
+               ["nn.Mul"] = "nn/Mul.lua",
+               ["nn.MulConstant"] = "nn/MulConstant.lua",
+               ["nn.MultiCriterion"] = "nn/MultiCriterion.lua",
+               ["nn.MultiLabelMarginCriterion"] = "nn/MultiLabelMarginCriterion.lua",
+               ["nn.MultiLabelSoftMarginCriterion"] = "nn/MultiLabelSoftMarginCriterion.lua",
+               ["nn.MultiMarginCriterion"] = "nn/MultiMarginCriterion.lua",
+               ["nn.Narrow"] = "nn/Narrow.lua",
+               ["nn.NarrowTable"] = "nn/NarrowTable.lua",
+               ["nn.Normalize"] = "nn/Normalize.lua",
+               ["nn.PReLU"] = "nn/PReLU.lua",
+               ["nn.Padding"] = "nn/Padding.lua",
+               ["nn.PairwiseDistance"] = "nn/PairwiseDistance.lua",
+               ["nn.Parallel"] = "nn/Parallel.lua",
+               ["nn.ParallelCriterion"] = "nn/ParallelCriterion.lua",
+               ["nn.ParallelTable"] = "nn/ParallelTable.lua",
+               ["nn.PartialLinear"] = "nn/PartialLinear.lua",
+               ["nn.Power"] = "nn/Power.lua",
+               ["nn.RReLU"] = "nn/RReLU.lua",
+               ["nn.ReLU"] = "nn/ReLU.lua",
+               ["nn.Replicate"] = "nn/Replicate.lua",
+               ["nn.Reshape"] = "nn/Reshape.lua",
+               ["nn.Select"] = "nn/Select.lua",
+               ["nn.SelectTable"] = "nn/SelectTable.lua",
+               ["nn.Sequential"] = "nn/Sequential.lua",
+               ["nn.Sigmoid"] = "nn/Sigmoid.lua",
+               ["nn.SmoothL1Criterion"] = "nn/SmoothL1Criterion.lua",
+               ["nn.SoftMarginCriterion"] = "nn/SoftMarginCriterion.lua",
+               ["nn.SoftMax"] = "nn/SoftMax.lua",
+               ["nn.SoftMin"] = "nn/SoftMin.lua",
+               ["nn.SoftPlus"] = "nn/SoftPlus.lua",
+               ["nn.SoftShrink"] = "nn/SoftShrink.lua",
+               ["nn.SoftSign"] = "nn/SoftSign.lua",
+               ["nn.SparseJacobian"] = "nn/SparseJacobian.lua",
+               ["nn.SparseLinear"] = "nn/SparseLinear.lua",
+               ["nn.SpatialAdaptiveMaxPooling"] = "nn/SpatialAdaptiveMaxPooling.lua",
+               ["nn.SpatialAveragePooling"] = "nn/SpatialAveragePooling.lua",
+               ["nn.SpatialBatchNormalization"] = "nn/SpatialBatchNormalization.lua",
+               ["nn.SpatialClassNLLCriterion"] = "nn/SpatialClassNLLCriterion.lua",
+               ["nn.SpatialContrastiveNormalization"] = "nn/SpatialContrastiveNormalization.lua",
+               ["nn.SpatialConvolution"] = "nn/SpatialConvolution.lua",
+               ["nn.SpatialConvolutionLocal"] = "nn/SpatialConvolutionLocal.lua",
+               ["nn.SpatialConvolutionMM"] = "nn/SpatialConvolutionMM.lua",
+               ["nn.SpatialConvolutionMap"] = "nn/SpatialConvolutionMap.lua",
+               ["nn.SpatialCrossMapLRN"] = "nn/SpatialCrossMapLRN.lua",
+               ["nn.SpatialDilatedConvolution"] = "nn/SpatialDilatedConvolution.lua",
+               ["nn.SpatialDivisiveNormalization"] = "nn/SpatialDivisiveNormalization.lua",
+               ["nn.SpatialDropout"] = "nn/SpatialDropout.lua",
+               ["nn.SpatialFractionalMaxPooling"] = "nn/SpatialFractionalMaxPooling.lua",
+               ["nn.SpatialFullConvolution"] = "nn/SpatialFullConvolution.lua",
+               ["nn.SpatialFullConvolutionMap"] = "nn/SpatialFullConvolutionMap.lua",
+               ["nn.SpatialLPPooling"] = "nn/SpatialLPPooling.lua",
+               ["nn.SpatialMaxPooling"] = "nn/SpatialMaxPooling.lua",
+               ["nn.SpatialMaxUnpooling"] = "nn/SpatialMaxUnpooling.lua",
+               ["nn.SpatialReflectionPadding"] = "nn/SpatialReflectionPadding.lua",
+               ["nn.SpatialReplicationPadding"] = "nn/SpatialReplicationPadding.lua",
+               ["nn.SpatialSoftMax"] = "nn/SpatialSoftMax.lua",
+               ["nn.SpatialSubSampling"] = "nn/SpatialSubSampling.lua",
+               ["nn.SpatialSubtractiveNormalization"] = "nn/SpatialSubtractiveNormalization.lua",
+               ["nn.SpatialUpSamplingNearest"] = "nn/SpatialUpSamplingNearest.lua",
+               ["nn.SpatialZeroPadding"] = "nn/SpatialZeroPadding.lua",
+               ["nn.SplitTable"] = "nn/SplitTable.lua",
+               ["nn.Sqrt"] = "nn/Sqrt.lua",
+               ["nn.Square"] = "nn/Square.lua",
+               ["nn.Squeeze"] = "nn/Squeeze.lua",
+               ["nn.StochasticGradient"] = "nn/StochasticGradient.lua",
+               ["nn.Sum"] = "nn/Sum.lua",
+               ["nn.THNN"] = "nn/THNN.lua",
+               ["nn.THNN_h"] = "nn/THNN_h.lua",
+               ["nn.Tanh"] = "nn/Tanh.lua",
+               ["nn.TanhShrink"] = "nn/TanhShrink.lua",
+               ["nn.TemporalConvolution"] = "nn/TemporalConvolution.lua",
+               ["nn.TemporalMaxPooling"] = "nn/TemporalMaxPooling.lua",
+               ["nn.TemporalSubSampling"] = "nn/TemporalSubSampling.lua",
+               ["nn.Threshold"] = "nn/Threshold.lua",
+               ["nn.Transpose"] = "nn/Transpose.lua",
+               ["nn.Unsqueeze"] = "nn/Unsqueeze.lua",
+               ["nn.View"] = "nn/View.lua",
+               ["nn.VolumetricAveragePooling"] = "nn/VolumetricAveragePooling.lua",
+               ["nn.VolumetricBatchNormalization"] = "nn/VolumetricBatchNormalization.lua",
+               ["nn.VolumetricConvolution"] = "nn/VolumetricConvolution.lua",
+               ["nn.VolumetricDropout"] = "nn/VolumetricDropout.lua",
+               ["nn.VolumetricFullConvolution"] = "nn/VolumetricFullConvolution.lua",
+               ["nn.VolumetricMaxPooling"] = "nn/VolumetricMaxPooling.lua",
+               ["nn.VolumetricMaxUnpooling"] = "nn/VolumetricMaxUnpooling.lua",
+               ["nn.WeightedEuclidean"] = "nn/WeightedEuclidean.lua",
+               ["nn.WeightedMSECriterion"] = "nn/WeightedMSECriterion.lua",
+               ["nn.hessian"] = "nn/hessian.lua",
+               ["nn.test"] = "nn/test.lua",
+               ["nn.utils"] = "nn/utils.lua",
+               ["nn/README.md"] = "nn/README.md",
+               ["nn/doc/containers.md"] = "nn/doc/containers.md",
+               ["nn/doc/convolution.md"] = "nn/doc/convolution.md",
+               ["nn/doc/criterion.md"] = "nn/doc/criterion.md",
+               ["nn/doc/image/abs.png"] = "nn/doc/image/abs.png",
+               ["nn/doc/image/elu.png"] = "nn/doc/image/elu.png",
+               ["nn/doc/image/exp.png"] = "nn/doc/image/exp.png",
+               ["nn/doc/image/hshrink.png"] = "nn/doc/image/hshrink.png",
+               ["nn/doc/image/htanh.png"] = "nn/doc/image/htanh.png",
+               ["nn/doc/image/lena.jpg"] = "nn/doc/image/lena.jpg",
+               ["nn/doc/image/lenap.jpg"] = "nn/doc/image/lenap.jpg",
+               ["nn/doc/image/logsigmoid.png"] = "nn/doc/image/logsigmoid.png",
+               ["nn/doc/image/logsoftmax.png"] = "nn/doc/image/logsoftmax.png",
+               ["nn/doc/image/parameterflattening.png"] = "nn/doc/image/parameterflattening.png",
+               ["nn/doc/image/parameterflattening.svg"] = "nn/doc/image/parameterflattening.svg",
+               ["nn/doc/image/power.png"] = "nn/doc/image/power.png",
+               ["nn/doc/image/prelu.png"] = "nn/doc/image/prelu.png",
+               ["nn/doc/image/relu.png"] = "nn/doc/image/relu.png",
+               ["nn/doc/image/rrelu.png"] = "nn/doc/image/rrelu.png",
+               ["nn/doc/image/sigmmoid.png"] = "nn/doc/image/sigmmoid.png",
+               ["nn/doc/image/sigmoid.png"] = "nn/doc/image/sigmoid.png",
+               ["nn/doc/image/softmax.png"] = "nn/doc/image/softmax.png",
+               ["nn/doc/image/softmin.png"] = "nn/doc/image/softmin.png",
+               ["nn/doc/image/softplus.png"] = "nn/doc/image/softplus.png",
+               ["nn/doc/image/softsign.png"] = "nn/doc/image/softsign.png",
+               ["nn/doc/image/sqrt.png"] = "nn/doc/image/sqrt.png",
+               ["nn/doc/image/square.png"] = "nn/doc/image/square.png",
+               ["nn/doc/image/sshrink.png"] = "nn/doc/image/sshrink.png",
+               ["nn/doc/image/tanh.png"] = "nn/doc/image/tanh.png",
+               ["nn/doc/index.md"] = "nn/doc/index.md",
+               ["nn/doc/module.md"] = "nn/doc/module.md",
+               ["nn/doc/overview.md"] = "nn/doc/overview.md",
+               ["nn/doc/simple.md"] = "nn/doc/simple.md",
+               ["nn/doc/table.md"] = "nn/doc/table.md",
+               ["nn/doc/testing.md"] = "nn/doc/testing.md",
+               ["nn/doc/training.md"] = "nn/doc/training.md",
+               ["nn/doc/transfer.md"] = "nn/doc/transfer.md"
+            }
+         }
+      }
+   },
+   nngraph = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               graph = "scm-1",
+               luaffi = "scm-1",
+               nn = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               nngraph = "nngraph/init.lua",
+               ["nngraph.JustElement"] = "nngraph/JustElement.lua",
+               ["nngraph.JustTable"] = "nngraph/JustTable.lua",
+               ["nngraph.ModuleFromCriterion"] = "nngraph/ModuleFromCriterion.lua",
+               ["nngraph.gmodule"] = "nngraph/gmodule.lua",
+               ["nngraph.graphinspecting"] = "nngraph/graphinspecting.lua",
+               ["nngraph.nest"] = "nngraph/nest.lua",
+               ["nngraph.nesting"] = "nngraph/nesting.lua",
+               ["nngraph.node"] = "nngraph/node.lua",
+               ["nngraph.simple_print"] = "nngraph/simple_print.lua",
+               ["nngraph.utils"] = "nngraph/utils.lua"
+            }
+         }
+      }
+   },
+   nninit = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               luaffi = "scm-1",
+               nn = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               nninit = "nninit.lua",
+               ["nninit.nninit"] = "nninit/nninit.lua"
+            }
+         }
+      }
+   },
+   nnx = {
+      ["0.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               libnnx = "libnnx.so",
+               nnx = "nnx/init.lua",
+               ["nnx.Balance"] = "nnx/Balance.lua",
+               ["nnx.CTCCriterion"] = "nnx/CTCCriterion.lua",
+               ["nnx.DataList"] = "nnx/DataList.lua",
+               ["nnx.DataSet"] = "nnx/DataSet.lua",
+               ["nnx.DataSetLabelMe"] = "nnx/DataSetLabelMe.lua",
+               ["nnx.DataSetSamplingPascal"] = "nnx/DataSetSamplingPascal.lua",
+               ["nnx.DistMarginCriterion"] = "nnx/DistMarginCriterion.lua",
+               ["nnx.DistNLLCriterion"] = "nnx/DistNLLCriterion.lua",
+               ["nnx.FunctionWrapper"] = "nnx/FunctionWrapper.lua",
+               ["nnx.LA"] = "nnx/LA.lua",
+               ["nnx.Minus"] = "nnx/Minus.lua",
+               ["nnx.MultiSoftMax"] = "nnx/MultiSoftMax.lua",
+               ["nnx.Probe"] = "nnx/Probe.lua",
+               ["nnx.PullTable"] = "nnx/PullTable.lua",
+               ["nnx.PushTable"] = "nnx/PushTable.lua",
+               ["nnx.QDRiemaNNLinear"] = "nnx/QDRiemaNNLinear.lua",
+               ["nnx.SaturatedLU"] = "nnx/SaturatedLU.lua",
+               ["nnx.SoftMaxTree"] = "nnx/SoftMaxTree.lua",
+               ["nnx.SparseCriterion"] = "nnx/SparseCriterion.lua",
+               ["nnx.SpatialClassifier"] = "nnx/SpatialClassifier.lua",
+               ["nnx.SpatialColorTransform"] = "nnx/SpatialColorTransform.lua",
+               ["nnx.SpatialDownSampling"] = "nnx/SpatialDownSampling.lua",
+               ["nnx.SpatialFovea"] = "nnx/SpatialFovea.lua",
+               ["nnx.SpatialGraph"] = "nnx/SpatialGraph.lua",
+               ["nnx.SpatialLinear"] = "nnx/SpatialLinear.lua",
+               ["nnx.SpatialMatching"] = "nnx/SpatialMatching.lua",
+               ["nnx.SpatialMaxSampling"] = "nnx/SpatialMaxSampling.lua",
+               ["nnx.SpatialNormalization"] = "nnx/SpatialNormalization.lua",
+               ["nnx.SpatialPadding"] = "nnx/SpatialPadding.lua",
+               ["nnx.SpatialPyramid"] = "nnx/SpatialPyramid.lua",
+               ["nnx.SpatialRadialMatching"] = "nnx/SpatialRadialMatching.lua",
+               ["nnx.SpatialReSampling"] = "nnx/SpatialReSampling.lua",
+               ["nnx.SpatialReSamplingEx"] = "nnx/SpatialReSamplingEx.lua",
+               ["nnx.SpatialRecursiveFovea"] = "nnx/SpatialRecursiveFovea.lua",
+               ["nnx.SpatialSparseCriterion"] = "nnx/SpatialSparseCriterion.lua",
+               ["nnx.SpatialUpSampling"] = "nnx/SpatialUpSampling.lua",
+               ["nnx.SuperCriterion"] = "nnx/SuperCriterion.lua",
+               ["nnx.Tic"] = "nnx/Tic.lua",
+               ["nnx.Toc"] = "nnx/Toc.lua",
+               ["nnx.TreeNLLCriterion"] = "nnx/TreeNLLCriterion.lua",
+               ["nnx.ZeroGrad"] = "nnx/ZeroGrad.lua",
+               ["nnx.test-all"] = "nnx/test-all.lua",
+               ["nnx.test-omp"] = "nnx/test-omp.lua"
+            }
+         }
+      }
+   },
+   optim = {
+      ["1.0.5-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               optim = "optim/init.lua",
+               ["optim.ConfusionMatrix"] = "optim/ConfusionMatrix.lua",
+               ["optim.Logger"] = "optim/Logger.lua",
+               ["optim.adadelta"] = "optim/adadelta.lua",
+               ["optim.adagrad"] = "optim/adagrad.lua",
+               ["optim.adam"] = "optim/adam.lua",
+               ["optim.adamax"] = "optim/adamax.lua",
+               ["optim.asgd"] = "optim/asgd.lua",
+               ["optim.cg"] = "optim/cg.lua",
+               ["optim.checkgrad"] = "optim/checkgrad.lua",
+               ["optim.cmaes"] = "optim/cmaes.lua",
+               ["optim.fista"] = "optim/fista.lua",
+               ["optim.lbfgs"] = "optim/lbfgs.lua",
+               ["optim.lswolfe"] = "optim/lswolfe.lua",
+               ["optim.nag"] = "optim/nag.lua",
+               ["optim.polyinterp"] = "optim/polyinterp.lua",
+               ["optim.rmsprop"] = "optim/rmsprop.lua",
+               ["optim.rprop"] = "optim/rprop.lua",
+               ["optim.sgd"] = "optim/sgd.lua"
+            }
+         }
+      }
+   },
+   paths = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               libpaths = "libpaths.so",
+               paths = "paths/init.lua"
+            }
+         }
+      }
+   },
+   penlight = {
+      ["1.3.2-2"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               luafilesystem = "1.6.3-2"
+            },
+            modules = {
+               pl = "pl/init.lua",
+               ["pl.Date"] = "pl/Date.lua",
+               ["pl.List"] = "pl/List.lua",
+               ["pl.Map"] = "pl/Map.lua",
+               ["pl.MultiMap"] = "pl/MultiMap.lua",
+               ["pl.OrderedMap"] = "pl/OrderedMap.lua",
+               ["pl.Set"] = "pl/Set.lua",
+               ["pl.app"] = "pl/app.lua",
+               ["pl.array2d"] = "pl/array2d.lua",
+               ["pl.class"] = "pl/class.lua",
+               ["pl.compat"] = "pl/compat.lua",
+               ["pl.comprehension"] = "pl/comprehension.lua",
+               ["pl.config"] = "pl/config.lua",
+               ["pl.data"] = "pl/data.lua",
+               ["pl.dir"] = "pl/dir.lua",
+               ["pl.file"] = "pl/file.lua",
+               ["pl.func"] = "pl/func.lua",
+               ["pl.import_into"] = "pl/import_into.lua",
+               ["pl.input"] = "pl/input.lua",
+               ["pl.lapp"] = "pl/lapp.lua",
+               ["pl.lexer"] = "pl/lexer.lua",
+               ["pl.luabalanced"] = "pl/luabalanced.lua",
+               ["pl.operator"] = "pl/operator.lua",
+               ["pl.path"] = "pl/path.lua",
+               ["pl.permute"] = "pl/permute.lua",
+               ["pl.pretty"] = "pl/pretty.lua",
+               ["pl.seq"] = "pl/seq.lua",
+               ["pl.sip"] = "pl/sip.lua",
+               ["pl.strict"] = "pl/strict.lua",
+               ["pl.stringio"] = "pl/stringio.lua",
+               ["pl.stringx"] = "pl/stringx.lua",
+               ["pl.tablex"] = "pl/tablex.lua",
+               ["pl.template"] = "pl/template.lua",
+               ["pl.test"] = "pl/test.lua",
+               ["pl.text"] = "pl/text.lua",
+               ["pl.types"] = "pl/types.lua",
+               ["pl.url"] = "pl/url.lua",
+               ["pl.utils"] = "pl/utils.lua",
+               ["pl.xml"] = "pl/xml.lua"
+            }
+         }
+      }
+   },
+   pprint = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               pprint = "pprint/init.lua"
+            }
+         }
+      }
+   },
+   qtlua = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               libqtcore = "libqtcore.so",
+               libqtgui = "libqtgui.so",
+               libqtide = "libqtide.so",
+               libqtsvg = "libqtsvg.so",
+               libqtuiloader = "libqtuiloader.so",
+               libqtwidget = "libqtwidget.so",
+               qtcore = "qtcore/init.lua",
+               qtgui = "qtgui/init.lua",
+               qtide = "qtide/init.lua",
+               ["qtide.prefs"] = "qtide/prefs.lua",
+               ["qtide/prefs.ui"] = "qtide/prefs.ui",
+               qtsvg = "qtsvg/init.lua",
+               qtuiloader = "qtuiloader/init.lua",
+               ["qtuiloader.test"] = "qtuiloader/test.lua",
+               ["qtuiloader/test.ui"] = "qtuiloader/test.ui",
+               qtwidget = "qtwidget/init.lua"
+            }
+         }
+      }
+   },
+   qttorch = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               qtlua = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               libqttorch = "libqttorch.so",
+               qttorch = "qttorch/init.lua",
+               ["qttorch/doc/README.md"] = "qttorch/doc/README.md"
+            }
+         }
+      }
+   },
+   rlenvs = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               classic = "scm-1",
+               cwrap = "scm-1",
+               dok = "scm-1",
+               graph = "scm-1",
+               image = "1.1.alpha-0",
+               luaffi = "scm-1",
+               luafilesystem = "1.6.3-2",
+               nn = "scm-1",
+               nngraph = "scm-1",
+               paths = "scm-1",
+               penlight = "1.3.2-2",
+               sundown = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               totem = "0-0",
+               xlua = "1.1-0"
+            },
+            modules = {
+               rlenvs = "rlenvs/init.lua",
+               ["rlenvs.Acrobot"] = "rlenvs/Acrobot.lua",
+               ["rlenvs.Atari"] = "rlenvs/Atari.lua",
+               ["rlenvs.Blackjack"] = "rlenvs/Blackjack.lua",
+               ["rlenvs.CartPole"] = "rlenvs/CartPole.lua",
+               ["rlenvs.Catch"] = "rlenvs/Catch.lua",
+               ["rlenvs.CliffWalking"] = "rlenvs/CliffWalking.lua",
+               ["rlenvs.DynaMaze"] = "rlenvs/DynaMaze.lua",
+               ["rlenvs.Env"] = "rlenvs/Env.lua",
+               ["rlenvs.GridWorld"] = "rlenvs/GridWorld.lua",
+               ["rlenvs.JacksCarRental"] = "rlenvs/JacksCarRental.lua",
+               ["rlenvs.MountainCar"] = "rlenvs/MountainCar.lua",
+               ["rlenvs.MultiArmedBandit"] = "rlenvs/MultiArmedBandit.lua",
+               ["rlenvs.RandomWalk"] = "rlenvs/RandomWalk.lua",
+               ["rlenvs.Taxi"] = "rlenvs/Taxi.lua",
+               ["rlenvs.WindyWorld"] = "rlenvs/WindyWorld.lua"
+            }
+         }
+      }
+   },
+   rnn = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               dpnn = "scm-1",
+               luaffi = "scm-1",
+               moses = "1.4.0-1",
+               nn = "scm-1",
+               nnx = "0.1-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               torchx = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               rnn = "rnn/init.lua",
+               ["rnn.AbstractRecurrent"] = "rnn/AbstractRecurrent.lua",
+               ["rnn.AbstractSequencer"] = "rnn/AbstractSequencer.lua",
+               ["rnn.BiSequencer"] = "rnn/BiSequencer.lua",
+               ["rnn.BiSequencerLM"] = "rnn/BiSequencerLM.lua",
+               ["rnn.CopyGrad"] = "rnn/CopyGrad.lua",
+               ["rnn.Dropout"] = "rnn/Dropout.lua",
+               ["rnn.FastLSTM"] = "rnn/FastLSTM.lua",
+               ["rnn.GRU"] = "rnn/GRU.lua",
+               ["rnn.LSTM"] = "rnn/LSTM.lua",
+               ["rnn.LinearNoBias"] = "rnn/LinearNoBias.lua",
+               ["rnn.LookupTableMaskZero"] = "rnn/LookupTableMaskZero.lua",
+               ["rnn.MaskZero"] = "rnn/MaskZero.lua",
+               ["rnn.MaskZeroCriterion"] = "rnn/MaskZeroCriterion.lua",
+               ["rnn.Module"] = "rnn/Module.lua",
+               ["rnn.NormStabilizer"] = "rnn/NormStabilizer.lua",
+               ["rnn.Padding"] = "rnn/Padding.lua",
+               ["rnn.Recurrence"] = "rnn/Recurrence.lua",
+               ["rnn.Recurrent"] = "rnn/Recurrent.lua",
+               ["rnn.RecurrentAttention"] = "rnn/RecurrentAttention.lua",
+               ["rnn.Recursor"] = "rnn/Recursor.lua",
+               ["rnn.Repeater"] = "rnn/Repeater.lua",
+               ["rnn.RepeaterCriterion"] = "rnn/RepeaterCriterion.lua",
+               ["rnn.SAdd"] = "rnn/SAdd.lua",
+               ["rnn.SeqBRNN"] = "rnn/SeqBRNN.lua",
+               ["rnn.SeqGRU"] = "rnn/SeqGRU.lua",
+               ["rnn.SeqLSTM"] = "rnn/SeqLSTM.lua",
+               ["rnn.SeqReverseSequence"] = "rnn/SeqReverseSequence.lua",
+               ["rnn.Sequencer"] = "rnn/Sequencer.lua",
+               ["rnn.SequencerCriterion"] = "rnn/SequencerCriterion.lua",
+               ["rnn.TrimZero"] = "rnn/TrimZero.lua",
+               ["rnn.ZeroGrad"] = "rnn/ZeroGrad.lua",
+               ["rnn.recursiveUtils"] = "rnn/recursiveUtils.lua",
+               ["rnn.test"] = "rnn/test.lua",
+               ["rnn/mnistsample.t7"] = "rnn/mnistsample.t7"
+            }
+         }
+      }
+   },
+   signal = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               fftw3 = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               libsignal = "libsignal.so",
+               signal = "signal/init.lua",
+               ["signal.complex"] = "signal/complex.lua",
+               ["signal.convolution"] = "signal/convolution.lua",
+               ["signal.extramath"] = "signal/extramath.lua",
+               ["signal.ffi"] = "signal/ffi.lua",
+               ["signal.fft"] = "signal/fft.lua",
+               ["signal.wavelet"] = "signal/wavelet.lua"
+            }
+         }
+      }
+   },
+   sundown = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               mdcat = "mdcat"
+            },
+            dependencies = {},
+            modules = {
+               libsundown = "libsundown.so",
+               sundown = "sundown/init.lua",
+               ["sundown.ascii"] = "sundown/ascii.lua",
+               ["sundown.env"] = "sundown/env.lua",
+               ["sundown.html"] = "sundown/html.lua",
+               ["sundown.htmlcdefs"] = "sundown/htmlcdefs.lua",
+               ["sundown.sdcdefs"] = "sundown/sdcdefs.lua"
+            }
+         }
+      }
+   },
+   sys = {
+      ["1.1-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               libsys = "libsys.so",
+               sys = "sys/init.lua",
+               ["sys.colors"] = "sys/colors.lua",
+               ["sys.fpath"] = "sys/fpath.lua"
+            }
+         }
+      }
+   },
+   tds = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               libtds = "libtds.so",
+               tds = "tds/init.lua",
+               ["tds.atomic"] = "tds/atomic.lua",
+               ["tds.cdefs"] = "tds/cdefs.lua",
+               ["tds.elem"] = "tds/elem.lua",
+               ["tds.env"] = "tds/env.lua",
+               ["tds.hash"] = "tds/hash.lua",
+               ["tds.vec"] = "tds/vec.lua"
+            }
+         }
+      }
+   },
+   threads = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               libthreads = "libthreads.so",
+               threads = "threads/init.lua",
+               ["threads.queue"] = "threads/queue.lua",
+               ["threads.serialize"] = "threads/serialize.lua",
+               ["threads.sharedserialize"] = "threads/sharedserialize.lua",
+               ["threads.threads"] = "threads/threads.lua"
+            }
+         }
+      }
+   },
+   torch = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1"
+            },
+            modules = {
+               libtorch = "libtorch.so",
+               torch = "torch/init.lua",
+               ["torch.CmdLine"] = "torch/CmdLine.lua",
+               ["torch.FFI"] = "torch/FFI.lua",
+               ["torch.File"] = "torch/File.lua",
+               ["torch.Tensor"] = "torch/Tensor.lua",
+               ["torch.TestSuite"] = "torch/TestSuite.lua",
+               ["torch.Tester"] = "torch/Tester.lua",
+               ["torch.test"] = "torch/test.lua",
+               ["torch/README.md"] = "torch/README.md",
+               ["torch/doc/cmdline.md"] = "torch/doc/cmdline.md",
+               ["torch/doc/diskfile.md"] = "torch/doc/diskfile.md",
+               ["torch/doc/file.md"] = "torch/doc/file.md",
+               ["torch/doc/gather.png"] = "torch/doc/gather.png",
+               ["torch/doc/index.md"] = "torch/doc/index.md",
+               ["torch/doc/maths.md"] = "torch/doc/maths.md",
+               ["torch/doc/memoryfile.md"] = "torch/doc/memoryfile.md",
+               ["torch/doc/pipefile.md"] = "torch/doc/pipefile.md",
+               ["torch/doc/random.md"] = "torch/doc/random.md",
+               ["torch/doc/serialization.md"] = "torch/doc/serialization.md",
+               ["torch/doc/storage.md"] = "torch/doc/storage.md",
+               ["torch/doc/tensor.md"] = "torch/doc/tensor.md",
+               ["torch/doc/tester.md"] = "torch/doc/tester.md",
+               ["torch/doc/timer.md"] = "torch/doc/timer.md",
+               ["torch/doc/utility.md"] = "torch/doc/utility.md"
+            }
+         }
+      }
+   },
+   torchx = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1"
+            },
+            modules = {
+               torchx = "torchx/init.lua",
+               ["torchx.AliasMultinomial"] = "torchx/AliasMultinomial.lua",
+               ["torchx.MultiCudaTensor"] = "torchx/MultiCudaTensor.lua",
+               ["torchx.Queue"] = "torchx/Queue.lua",
+               ["torchx.concat"] = "torchx/concat.lua",
+               ["torchx.dkjson"] = "torchx/dkjson.lua",
+               ["torchx.extend"] = "torchx/extend.lua",
+               ["torchx.find"] = "torchx/find.lua",
+               ["torchx.group"] = "torchx/group.lua",
+               ["torchx.indexdir"] = "torchx/indexdir.lua",
+               ["torchx.md5"] = "torchx/md5.lua",
+               ["torchx.recursivetensor"] = "torchx/recursivetensor.lua",
+               ["torchx.remap"] = "torchx/remap.lua",
+               ["torchx.test"] = "torchx/test.lua",
+               ["torchx.treemax"] = "torchx/treemax.lua"
+            }
+         }
+      }
+   },
+   totem = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {
+               ["totem-init"] = "totem-init",
+               ["totem-run"] = "totem-run"
+            },
+            dependencies = {
+               cwrap = "scm-1",
+               graph = "scm-1",
+               luaffi = "scm-1",
+               luafilesystem = "1.6.3-2",
+               nn = "scm-1",
+               nngraph = "scm-1",
+               paths = "scm-1",
+               penlight = "1.3.2-2",
+               sys = "1.1-0",
+               torch = "scm-1"
+            },
+            modules = {
+               totem = "totem/init.lua",
+               ["totem.TestSuite"] = "totem/TestSuite.lua",
+               ["totem.Tester"] = "totem/Tester.lua",
+               ["totem.asserts"] = "totem/asserts.lua",
+               ["totem.examples.test_nn"] = "totem/examples/test_nn.lua",
+               ["totem.examples.test_simple"] = "totem/examples/test_simple.lua",
+               ["totem.examples.test_tensor"] = "totem/examples/test_tensor.lua",
+               ["totem.nn"] = "totem/nn.lua"
+            }
+         }
+      }
+   },
+   trepl = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               th = "th"
+            },
+            dependencies = {
+               cwrap = "scm-1",
+               luafilesystem = "1.6.3-2",
+               paths = "scm-1",
+               penlight = "1.3.2-2",
+               torch = "scm-1"
+            },
+            modules = {
+               readline = "readline.so",
+               trepl = "trepl/init.lua",
+               ["trepl.colorize"] = "trepl/colorize.lua",
+               ["trepl.colors"] = "trepl/colors.lua",
+               treplutils = "treplutils.so"
+            }
+         }
+      }
+   },
+   unsup = {
+      ["0.1-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               optim = "1.0.5-0",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1",
+               xlua = "1.1-0"
+            },
+            modules = {
+               libunsup = "libunsup.so",
+               unsup = "unsup/init.lua",
+               ["unsup.AutoEncoder"] = "unsup/AutoEncoder.lua",
+               ["unsup.ConvPsd"] = "unsup/ConvPsd.lua",
+               ["unsup.Diag"] = "unsup/Diag.lua",
+               ["unsup.FistaL1"] = "unsup/FistaL1.lua",
+               ["unsup.LinearFistaL1"] = "unsup/LinearFistaL1.lua",
+               ["unsup.LinearPsd"] = "unsup/LinearPsd.lua",
+               ["unsup.SparseAutoEncoder"] = "unsup/SparseAutoEncoder.lua",
+               ["unsup.SpatialConvFistaL1"] = "unsup/SpatialConvFistaL1.lua",
+               ["unsup.UnsupModule"] = "unsup/UnsupModule.lua",
+               ["unsup.UnsupTrainer"] = "unsup/UnsupTrainer.lua",
+               ["unsup.kmeans"] = "unsup/kmeans.lua",
+               ["unsup.pca"] = "unsup/pca.lua",
+               ["unsup.psd"] = "unsup/psd.lua",
+               ["unsup.topo-kmeans"] = "unsup/topo-kmeans.lua",
+               ["unsup.whitening"] = "unsup/whitening.lua"
+            }
+         }
+      }
+   },
+   util = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {
+               util = "util/init.lua",
+               ["util.CSVFile"] = "util/CSVFile.lua",
+               ["util.arg"] = "util/arg.lua",
+               ["util.file"] = "util/file.lua",
+               ["util.nan"] = "util/nan.lua",
+               ["util.queue"] = "util/queue.lua",
+               ["util.warn"] = "util/warn.lua",
+               ["util.warnself"] = "util/warnself.lua"
+            }
+         }
+      }
+   },
+   xitari = {
+      ["0-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               torch = "scm-1"
+            },
+            modules = {}
+         }
+      }
+   },
+   xlua = {
+      ["1.1-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cwrap = "scm-1",
+               paths = "scm-1",
+               sys = "1.1-0",
+               torch = "scm-1"
+            },
+            modules = {
+               xlua = "xlua/init.lua",
+               ["xlua.OptionParser"] = "xlua/OptionParser.lua",
+               ["xlua.Profiler"] = "xlua/Profiler.lua"
+            }
+         }
+      }
+   },
+   yaml = {
+      ["1.1.2-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               luafilesystem = "1.6.3-2",
+               lub = "1.1.0-1"
+            },
+            modules = {
+               yaml = "yaml/init.lua",
+               ["yaml.core"] = "yaml/core.so"
+            }
+         }
+      }
+   }
+}

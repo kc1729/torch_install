@@ -1,0 +1,18 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "0e78375a9d64182ad037cf4fd07c72c7"
+   },
+   lib = {
+      ["libthreads.so"] = "cfaae75442504c0b0a4440b681d63baf"
+   },
+   lua = {
+      threads = {
+         ["init.lua"] = "001ff6619710acf347c84b4f91b78ac5",
+         ["queue.lua"] = "09beb26ce2b102ae9ffd45259d150773",
+         ["serialize.lua"] = "646c8a7a1d51cb95deadb7585e7f607c",
+         ["sharedserialize.lua"] = "579eb558d0b796183ea0531cc00a9cb0",
+         ["threads.lua"] = "4774f897afe8c3929d37512d8c9a3647"
+      }
+   },
+   ["threads-scm-1.rockspec"] = "a9ea9e56b6fcad85fcfba7a80932632e"
+}

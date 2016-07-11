@@ -1,0 +1,26 @@
+rock_manifest = {
+   ["classic-scm-1.rockspec"] = "a8240a7751b4b9c16d321b0b114fd42b",
+   doc = {
+      ["README.md"] = "26f1e1b321fda289c363b1e2a333f653"
+   },
+   lua = {
+      classic = {
+         ["Class.lua"] = "e80640463f4077c9100eb1bcbafa31a0",
+         ["Module.lua"] = "98f10d3b922969e419d59f7a99f238ac",
+         ["init.lua"] = "60fa1fbb55fb7b035a677abf84b176fd",
+         tests = {
+            class = {
+               ["common.lua"] = "eef77cf90ebbbad541b9ab1e2262a137",
+               ["definitions.lua"] = "8b69e7c75688eeb9cc08a05d8bdd7f56",
+               ["utils.lua"] = "c302735db89da246b62a265a2b69bcc0"
+            },
+            module = {
+               ["test.lua"] = "11b7bd781490342849343939cd4d8f7b"
+            }
+         },
+         torch = {
+            ["init.lua"] = "25620343e2c3e749b5c7a28d2e238792"
+         }
+      }
+   }
+}

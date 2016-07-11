@@ -1,0 +1,47 @@
+rock_manifest = {
+   ["cudnn-scm-1.rockspec"] = "2372d48f2a2772e340319fa062e4c0d3",
+   doc = {
+      LICENSE = "266c4637115165531ebbf6b334c3d4f6",
+      ["README.md"] = "7cc1bba7cff341e2473ba35de5f8304e"
+   },
+   lua = {
+      cudnn = {
+         ["BLSTM.lua"] = "81344ddc45edfd58fa8f26d0d40376c3",
+         ["BatchNormalization.lua"] = "4caaacd2b69cb5d120ee2eef170628c7",
+         ["ClippedReLU.lua"] = "adf892bfd56327f419904ef5f85293df",
+         ["GRU.lua"] = "c23adf1cfc15402c60ea30149ddc753e",
+         ["LSTM.lua"] = "b05398791a32fbe9fe371ffd23cf9f18",
+         ["LogSoftMax.lua"] = "1155735cb452798d7e3d7cb0ec1b9355",
+         ["Pointwise.lua"] = "017cccef61143f483e86951367fb3a1b",
+         ["Pooling.lua"] = "7bf7a4c62484ee5c9a78ffadd4cc320f",
+         ["Pooling3D.lua"] = "88dd822d984ca465d748ff2ff0383f07",
+         ["RNN.lua"] = "7b524f0dab18b5b262a04cffe78980be",
+         ["RNNReLU.lua"] = "a426abf9e8f5f759962f587c124804c2",
+         ["RNNTanh.lua"] = "09419a10de2138de45eb4ec153871df6",
+         ["ReLU.lua"] = "3bc66517e4057eebebe4f1c7e354f9e6",
+         ["Sigmoid.lua"] = "010644a873b708f5da203d393da3c134",
+         ["SoftMax.lua"] = "4a911be745b33a1baf2e437bc98293f8",
+         ["SpatialAveragePooling.lua"] = "761157110c320c0504d1b284846d00be",
+         ["SpatialBatchNormalization.lua"] = "947989c85838da83d17be065e441802a",
+         ["SpatialConvolution.lua"] = "5a24931290dbb20cc9ad0cc7804781a6",
+         ["SpatialCrossEntropyCriterion.lua"] = "20b91acad2b3371f626323d33a5e94e1",
+         ["SpatialCrossMapLRN.lua"] = "483990afb0ae4743ed4d8c0e04d4dd5d",
+         ["SpatialDivisiveNormalization.lua"] = "ef679e7c2b188428dbfe09711001853b",
+         ["SpatialFullConvolution.lua"] = "df02f1cae2a00757af55da609f575261",
+         ["SpatialLogSoftMax.lua"] = "14f1c6c2b9fbd8485538fc7ca03e0a99",
+         ["SpatialMaxPooling.lua"] = "91dfb84308123a212c8ef0c6065e4f95",
+         ["SpatialSoftMax.lua"] = "c2c0feb94d96d9496255c2328a26cad6",
+         ["Tanh.lua"] = "e5079766a33fb1d8d5890f6584af0355",
+         ["TemporalConvolution.lua"] = "9f4407df885481ca5fc4113fafd5cfe8",
+         ["VolumetricAveragePooling.lua"] = "ab422154182c0d0f4b09ec9e98a432dd",
+         ["VolumetricBatchNormalization.lua"] = "b08709401871cd82bfb6a5b00e2ffcd7",
+         ["VolumetricConvolution.lua"] = "9832a1ad0a67fdbbc91cc528eb8bacfd",
+         ["VolumetricMaxPooling.lua"] = "821308617bd2f434f63d5639f854b7d1",
+         ["convert.lua"] = "c2b8a5060d2a45b36dc902a13dbff87a",
+         ["env.lua"] = "e6647982bf249d28996514ed815f9e99",
+         ["ffi.lua"] = "5be9ad11d51dfb76ca2db49cbc19a215",
+         ["functional.lua"] = "3ddd6131c1a5b382954b0e6d6ed40119",
+         ["init.lua"] = "2a0d51882ad1ac2e6bbfd27e8984518f"
+      }
+   }
+}

@@ -1,0 +1,92 @@
+rock_manifest = {
+   doc = {
+      _highlight = {
+         LICENSE = "ec39d75cbc4de8171c2f6656a26816a3",
+         ["README.md"] = "706c79b1d57cdd2b8cb9f5374994f3a5",
+         ["classref.txt"] = "e095ae120d1b8a9c12d0ebf7e7fa967b",
+         ["highlight.pack.js"] = "7ea2539fd4fe874a486885dc2d05c58c",
+         styles = {
+            ["arta.css"] = "beb43641c62b1e3445356a5325e8f347",
+            ["ascetic.css"] = "bb82a488454ab59ce09f87e37697eab6",
+            ["brown_paper.css"] = "20a30e6e72a0b0c8acb58a0b15523a18",
+            ["brown_papersq.png"] = "82cd9f5d6e9f0e3f3de24eaab6671d88",
+            ["dark.css"] = "e67d201e74c39d665da5664d34f1db6b",
+            ["default.css"] = "1f0e251735747f01ff67f19bb5bb7827",
+            ["docco.css"] = "2017983407b0a64300761bebb17b136d",
+            ["far.css"] = "122a2f779ce770e21ed2ce622c7faadc",
+            ["foundation.css"] = "4a2e6ec32a44043f27ae50412dc297a2",
+            ["github.css"] = "ec704f4873459130dd3e5ea2670ac95f",
+            ["googlecode.css"] = "a692819d8384a019dd6b85d45099e39f",
+            ["idea.css"] = "cad5036ff7da4f7009278b0ddc18dc05",
+            ["ir_black.css"] = "52c475b3950fec315bff3a1e7c80762b",
+            ["magula.css"] = "5423c79d91364aec7879eaf9c5117a4c",
+            ["mono-blue.css"] = "3b1df3173738c43737f195d20efe782d",
+            ["monokai.css"] = "d072e03d256f572a13f0658502dc0539",
+            ["monokai_sublime.css"] = "513121ca0ea4439dd8da671d258f7f6d",
+            ["obsidian.css"] = "880d6adf366e109c81a485ff095e30b1",
+            ["pojoaque.css"] = "c384dc304230dced8bd94e5e7afd5d78",
+            ["pojoaque.jpg"] = "8c391d520d67f644c146dcfaee1eb25f",
+            ["railscasts.css"] = "d88f7026d20d32c84bb1aa527f77852f",
+            ["rainbow.css"] = "d394d934b0bb7908db78f0e08f268ade",
+            ["school_book.css"] = "c716a7d7609f08b4c07a5cbee107a10b",
+            ["school_book.png"] = "069f91d8694b98ca01fb750760f1563d",
+            ["solarized_dark.css"] = "845eb33f2a4001645b340642c8cd386f",
+            ["solarized_light.css"] = "bb3f05eb8a3a3d4b6b2cfeb89352dadf",
+            ["sunburst.css"] = "0f85672ebff47a8b9201accf75da86d5",
+            ["tomorrow-night-blue.css"] = "bd717c6881d1fc4eabcd3591482761ae",
+            ["tomorrow-night-bright.css"] = "f4c2a42e479b65f616edcc39ea6f8f6e",
+            ["tomorrow-night-eighties.css"] = "d95cf4207791e84a97ffae83638f1e45",
+            ["tomorrow-night.css"] = "4067182039737bed4dfed1be396cdb68",
+            ["tomorrow.css"] = "bd04363ff97befcf2b0587f6fa4e3498",
+            ["vs.css"] = "54d3a346139a9f45bc0459ec4d1f571c",
+            ["xcode.css"] = "d93e64c1764043da5f372684c60fb2eb",
+            ["zenburn.css"] = "1603fc204a60dcb428f2c535fb6299ad"
+         }
+      },
+      _markdown = {
+         signal = {
+            ["README.md"] = "7529b4c2a66014e73125f4cf245e958f",
+            ["complex.md"] = "cf00ab01272114d121538a2bc475d2a2",
+            ["convolution.md"] = "37b3a2a488fb43b5b8715295233e4a06",
+            ["extramath.md"] = "3bd03db6e5e6558ad16ea5b0a66bb86a",
+            ["ffi.md"] = "d41d8cd98f00b204e9800998ecf8427e",
+            ["fft.md"] = "f4be79196802029bc8f6040dacb14856",
+            ["init.md"] = "2b1244c78d53ca22b74c698226ed7153",
+            ["wavelet.md"] = "a722ee2d3c2bf7c4dadc152dd21b9f65"
+         }
+      },
+      ["index.html"] = "fed255b4cb2ba32cb8444f4e1c2deb74",
+      ["search.js"] = "f384fc6d32ad5fd40c2935dbad0e9fac",
+      signal = {
+         ["complex.html"] = "8d08296330ad653cebc70bf59d522bb2",
+         ["convolution.html"] = "004d5a4be1245e57611813cb42acd7c0",
+         extra = {
+            ["README.html"] = "819e9d56ee2bf6faec18a98fa9391927"
+         },
+         ["extramath.html"] = "dbb363f79ef89fbb319b473f31375f81",
+         ["ffi.html"] = "d41d8cd98f00b204e9800998ecf8427e",
+         ["fft.html"] = "2d0e29c8ea39d95063c47f4c36e40d33",
+         ["index.html"] = "f12a152adf6d1df86eb84861b2255906",
+         ["init.html"] = "0711ca96246a355682bcaed74757aa3e",
+         ["style.css"] = "8cdd3b4b9a0146e6c3353b49ce5f491e",
+         ["wavelet.html"] = "1ace4ce856cd1d5b08c0632f5ad64bfe"
+      },
+      ["style-page.css"] = "8cdd3b4b9a0146e6c3353b49ce5f491e",
+      ["style.css"] = "e624efd86476cd0173ff3d4801bf8179"
+   },
+   lib = {
+      ["libsignal.so"] = "f8ffcee0a7ea5f9bc3ec7d2cedd324f4"
+   },
+   lua = {
+      signal = {
+         ["complex.lua"] = "1ffca2d69cce1f8f1f84822740ecf52e",
+         ["convolution.lua"] = "3bfad943c4ee690eff28c37ea5f8fb20",
+         ["extramath.lua"] = "2f3f545d436bb3c53e9148056c3a84af",
+         ["ffi.lua"] = "eeb9763ccbcfe5565e14ddadf267adbd",
+         ["fft.lua"] = "3bbdb13dc3e297e66f11f1911fe80c93",
+         ["init.lua"] = "5ab2878aa838838bc1239afab4692499",
+         ["wavelet.lua"] = "3540c705c12e60ad0586584b6cbd09db"
+      }
+   },
+   ["signal-scm-1.rockspec"] = "d067183a777816e389d5fa1de86eb596"
+}

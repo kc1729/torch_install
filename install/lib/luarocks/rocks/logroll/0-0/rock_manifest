@@ -1,0 +1,12 @@
+rock_manifest = {
+   doc = {
+      LICENSE = "26de8a00b420dd70c4bd3877dcd45aa1",
+      ["README.md"] = "2f5638d8ba92d1a3f74616d7e7234dc8"
+   },
+   ["logroll-0-0.rockspec"] = "cb4d369b8662d3e5f756f8c1730294bb",
+   lua = {
+      logroll = {
+         ["init.lua"] = "d5236c5cba2241500faf29e68e55414c"
+      }
+   }
+}

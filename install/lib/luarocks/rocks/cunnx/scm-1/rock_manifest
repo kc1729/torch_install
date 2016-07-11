@@ -1,0 +1,27 @@
+rock_manifest = {
+   ["cunnx-scm-1.rockspec"] = "ed09fbaabda97079621616cc9ac322ec",
+   doc = {
+      ["README.md"] = "54a55034d73ae218950d1b6e74acc5d7"
+   },
+   lib = {
+      ["libcunnx.so"] = "ad5d3b3a6aea15b8fcda2a5360ab4cb2"
+   },
+   lua = {
+      cunnx = {
+         ["BlockMixture.lua"] = "42b511524418ffd6bfe51538f11b1f76",
+         ["BlockSparse.lua"] = "999e8d4f6c16358c229d953f0ecc91c3",
+         ["LazyKBest.lua"] = "c5f4b57cdde8918435034e9bbda49206",
+         ["LinearNoBias.lua"] = "d0ddf1c8867f5c5bd8589ff857587a7b",
+         ["MultinomialStatistics.lua"] = "3b10874d43a3f9c7513602752ba10507",
+         ["NoisyReLU.lua"] = "c646c3e4642b91b40d0ee65f0927d08e",
+         ["Sort.lua"] = "18780a536a55fc195b27905258cfc359",
+         ["TypeDecorator.lua"] = "0d93a039a0acddebcb462deb6681606d",
+         ["WindowGate.lua"] = "3d4271205be1f16e6f70c352b616bd87",
+         ["WindowGate2.lua"] = "9d9178a8c127393f66100e0a1a5da254",
+         ["WindowMixture.lua"] = "33aa1e60644f735d7ac73964ebdea856",
+         ["WindowSparse.lua"] = "486ab16667390210d96152a742820d7a",
+         ["init.lua"] = "9053545ac74ce3c101ee6be37c0613ea",
+         ["test.lua"] = "dfbe6161c94dc2fa9fdf92d0aa4f1096"
+      }
+   }
+}

@@ -1,0 +1,4 @@
+/home/deeprl/torch/build/exe/luajit-rocks/luajit-2.1/CMakeFiles/buildvm.dir
+/home/deeprl/torch/build/exe/luajit-rocks/luajit-2.1/CMakeFiles/libluajit.dir
+/home/deeprl/torch/build/exe/luajit-rocks/luajit-2.1/CMakeFiles/luajit.dir
+/home/deeprl/torch/build/exe/luajit-rocks/luajit-2.1/CMakeFiles/minilua.dir

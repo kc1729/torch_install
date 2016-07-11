@@ -1,0 +1,20 @@
+rock_manifest = {
+   bin = {
+      th = "35407884b15c3bddec3f78b4c57ef21b"
+   },
+   doc = {
+      ["index.md"] = "01ed75049a765fa892ea41bbeaca5667"
+   },
+   lib = {
+      ["readline.so"] = "113523695889df7d04d0f0ea6fb36051",
+      ["treplutils.so"] = "d32deeed40d3b83105341685c4ddb496"
+   },
+   lua = {
+      trepl = {
+         ["colorize.lua"] = "fda6d904604dfd0b7287ed2c13272ab3",
+         ["colors.lua"] = "798fe862a546665f015a9deeb6a7b4aa",
+         ["init.lua"] = "a42e514a1d6bd12fa911c7796b939849"
+      }
+   },
+   ["trepl-scm-1.rockspec"] = "6d3f833b82f528b816792fb146514744"
+}

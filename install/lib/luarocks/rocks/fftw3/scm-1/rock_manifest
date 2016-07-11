@@ -1,0 +1,14 @@
+rock_manifest = {
+   doc = {
+      LICENSE = "e4ce0ca7b47c0482fc69d667289cab3d",
+      ["README.md"] = "aec1cae6b1f01b88559592e809976f37"
+   },
+   ["fftw3-scm-1.rockspec"] = "7e55f13fbb461f428dbaf57da5cc04e4",
+   lua = {
+      fftw3 = {
+         ["cdefs.lua"] = "20154ac93d81da81ba53dacb5bf582d9",
+         ["defines.lua"] = "aa3d33bc8421f1ed890a883f22b1dea4",
+         ["init.lua"] = "393c443996f8f06789d331f2a38f148c"
+      }
+   }
+}

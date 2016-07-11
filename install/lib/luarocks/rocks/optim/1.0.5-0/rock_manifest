@@ -1,0 +1,29 @@
+rock_manifest = {
+   doc = {
+      ["index.md"] = "182820f5c4136b27c4fafa7290292310"
+   },
+   lua = {
+      optim = {
+         ["ConfusionMatrix.lua"] = "546d28f673d72bb10063baf2687aa262",
+         ["Logger.lua"] = "0d2ee806897cebfd129cb6fa74cb4b4b",
+         ["adadelta.lua"] = "dc2d6ba093c66526e9ea3700ded1c1e0",
+         ["adagrad.lua"] = "66071753f83cb0aa51d663f95389ba92",
+         ["adam.lua"] = "ec3928e57aeb67e5f4718db3b9ba2beb",
+         ["adamax.lua"] = "16638a860e343797c7cd3c362b2f743e",
+         ["asgd.lua"] = "3535824e56b70163825e942979ad15ed",
+         ["cg.lua"] = "550005fc7da813f84a1b07b43561c4e6",
+         ["checkgrad.lua"] = "39074ba8f902388175fbc7b2bf99e862",
+         ["cmaes.lua"] = "9dfd161c2d83548608ad3cb3de3c9365",
+         ["fista.lua"] = "46465b3b4dba3904ac6e409e5f43dc6e",
+         ["init.lua"] = "f3e352d95c1f6aaead31f75edd613536",
+         ["lbfgs.lua"] = "7bdc24cd0dd582c9fbedf321f497f44f",
+         ["lswolfe.lua"] = "e626824c6b1d1a9aa63a59e1dfd7780d",
+         ["nag.lua"] = "797e7af465839a6bd3d341f8b8a4de5e",
+         ["polyinterp.lua"] = "835e40aa4c686ee63861ff24b04c2ac2",
+         ["rmsprop.lua"] = "06d3727425e2bee5fb8ea630d24b42be",
+         ["rprop.lua"] = "e1faead43e94b5ddb54490418e749524",
+         ["sgd.lua"] = "b21badd7aa4a36b45834508ead52454f"
+      }
+   },
+   ["optim-1.0.5-0.rockspec"] = "70ded0e1d0ca7cbbc00ef3d1c7874450"
+}

@@ -1,0 +1,29 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "305408de50b87032bfedfdb0cde6e161"
+   },
+   lib = {
+      ["libunsup.so"] = "b0e92fb48dad1f60ef848e4893f0d5fb"
+   },
+   lua = {
+      unsup = {
+         ["AutoEncoder.lua"] = "bd774bef86f91f64f9ef875c492b4146",
+         ["ConvPsd.lua"] = "f09a0720d2c5a6aace57cc66355c3eea",
+         ["Diag.lua"] = "a178da97a6a3c0f89337c6c27e1ccfdc",
+         ["FistaL1.lua"] = "2dc9ede27e6057e9678869377183e6a8",
+         ["LinearFistaL1.lua"] = "4abd6371c436342e93edc50a3b20b94c",
+         ["LinearPsd.lua"] = "90d4375af3818c6e472183bfd4c1b74e",
+         ["SparseAutoEncoder.lua"] = "0fce811b41a0157300fa513fc84f9375",
+         ["SpatialConvFistaL1.lua"] = "4050b23337ac9705e858f83e47eb871f",
+         ["UnsupModule.lua"] = "54be557a501321ac385bac55d3805299",
+         ["UnsupTrainer.lua"] = "0e18f5852d16353d0729e432c388a409",
+         ["init.lua"] = "ccfff04a9ef0806af1c17857bd826c6f",
+         ["kmeans.lua"] = "6ce3dc505f6619217f510ba06ab5f415",
+         ["pca.lua"] = "aa9a4f9d58bfcdc46891d815454c1b76",
+         ["psd.lua"] = "73829e8c06df06231eb48aca64517d7d",
+         ["topo-kmeans.lua"] = "a5be95c8dac619cab3e44e1eb22830f0",
+         ["whitening.lua"] = "b601a4d45e6468db45ffab7099dc7b4a"
+      }
+   },
+   ["unsup-0.1-0.rockspec"] = "4f96194c5addb7fd3420a076eceed6b0"
+}

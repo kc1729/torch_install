@@ -1,0 +1,13 @@
+rock_manifest = {
+   doc = {
+      ["LICENSE.md"] = "1a2b3e7c7488035c7cf5eb9786b26564",
+      ["README.md"] = "9d8e348477bf5d21b67007729187e377"
+   },
+   lua = {
+      nninit = {
+         ["nninit.lua"] = "1f073646c550fd399616728ef95daee4"
+      },
+      ["nninit.lua"] = "1f073646c550fd399616728ef95daee4"
+   },
+   ["nninit-scm-1.rockspec"] = "71e98885b56be859f73178391ecaf845"
+}

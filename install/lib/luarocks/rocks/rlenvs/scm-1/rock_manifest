@@ -1,0 +1,27 @@
+rock_manifest = {
+   doc = {
+      ["LICENSE.md"] = "d14e2d74f48017342a7e44f294577157",
+      ["README.md"] = "7aecc6bacf8c5cf670fb83b09ad76875"
+   },
+   lua = {
+      rlenvs = {
+         ["Acrobot.lua"] = "0e2171492f3ad991687b8076bf179a58",
+         ["Atari.lua"] = "3c1fd39180744ddc4433d503fe1d444f",
+         ["Blackjack.lua"] = "85b9f8ff51099abe8eeb1ae467b0a5b7",
+         ["CartPole.lua"] = "22b0ffe153aa892865e18098040f912a",
+         ["Catch.lua"] = "22804a7b0c5e0d295acff4d235101a10",
+         ["CliffWalking.lua"] = "0fb962fa7eb75ec6e4e16f8c42a55f19",
+         ["DynaMaze.lua"] = "021fd43ce72f11a4d3bbc8960996afcf",
+         ["Env.lua"] = "bf0d5e53d60771608154ef34ad220b6f",
+         ["GridWorld.lua"] = "5d0d3d39560e03dec92153a668744b0c",
+         ["JacksCarRental.lua"] = "8d615cf70b3fd635666788ea13bcefa3",
+         ["MountainCar.lua"] = "d776a1e58dcd15e5d0405eb34cad0945",
+         ["MultiArmedBandit.lua"] = "21c8b0cfe7281e19ecdc7c7d1b158616",
+         ["RandomWalk.lua"] = "03680b0ea244a72a461fdf1c9dc304a2",
+         ["Taxi.lua"] = "604c437a022424cf2415fc849c18b93b",
+         ["WindyWorld.lua"] = "d7f64face7c0d10500ac0cebb0fffa8e",
+         ["init.lua"] = "cdd48663f9ed7b7405f818a83305c3ac"
+      }
+   },
+   ["rlenvs-scm-1.rockspec"] = "db8abc8a8d185457846fd1d9fbd7c5d3"
+}

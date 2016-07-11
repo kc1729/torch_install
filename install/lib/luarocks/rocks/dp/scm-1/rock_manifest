@@ -1,0 +1,155 @@
+rock_manifest = {
+   doc = {
+      ["data.md"] = "57406d772f168baaf04184127bbce38e",
+      ["datatutorial.md"] = "c6153409897528e07048198b99df2599",
+      ["experiment.md"] = "c99064984135a0bf043b91e2e8a43fe4",
+      ["facialkeypointstutorial.md"] = "080b6e6288594b2185616c3b577bf28f",
+      ["feedback.md"] = "37d256debb4878bfd44b5af69add6ac3",
+      ["hyper.md"] = "d41d8cd98f00b204e9800998ecf8427e",
+      image = {
+         ["Lenna.png"] = "814a0034f5549e957ee61360d87457e5",
+         ["bg_370.png"] = "eeb3669c0110921fa8f70c5120f55180",
+         ["face_28164.png"] = "c0ed17a2dc0155a017a373ec2efb9170",
+         ["lecunlcn.png"] = "674ecc56c73c3ee22c58dfec595c0b3e"
+      },
+      ["index.md"] = "5b27583629123162e1fe3164babc8057",
+      ["languagemodeltutorial.md"] = "1c9dcdce69ce5be75618bb90b054fc32",
+      ["mediator.md"] = "93a4336244056fac15fbc8b1414b5069",
+      ["neuralnetworktutorial.md"] = "c4f976948b4b28f317141930ac6683f5",
+      ["observer.md"] = "5e0f59e03021dd871a036a8028b7e6bf",
+      ["preprocess.md"] = "44526096e86be4e24179a738b20395f7",
+      ["propagator.md"] = "deb8881a668775f57e5231fe415aa13c",
+      spreadsheet = {
+         ["hyperoptimization.ods"] = "3478891136a14121008eea8935069b81"
+      },
+      ["view.md"] = "8acbe7a8b9410e6903463037890595c8"
+   },
+   ["dp-scm-1.rockspec"] = "93b87bb832df4f7674bf343af922227b",
+   lua = {
+      dp = {
+         data = {
+            ["baseset.lua"] = "d107bc7142ca79b7ed3b320f33ad23bb",
+            ["batch.lua"] = "5958d9fbaf14d64eefdaba8e3e12477f",
+            ["billionwords.lua"] = "bf769152c9c63909eb93427fce67e8e2",
+            ["cifar10.lua"] = "33f7ab3bbe70f388d19f058a00bf34a9",
+            ["cifar100.lua"] = "aa6e4eddc52259aaf6d2c42cf1fad678",
+            ["dataset.lua"] = "966ecedc87d2f361f13ffbf8a702f952",
+            ["datasource.lua"] = "7a100bad9601853599df939bbd2673ee",
+            ["facedetection.lua"] = "83413c4eb8e5927a9918c94b03ce029a",
+            ["facialkeypoints.lua"] = "cde07ec18d71cf2d86972548e8b2fb55",
+            ["imageclassset.lua"] = "3652a92f75d502c832dc07e60071b94d",
+            ["imagenet.lua"] = "b8d8eef6b71d4f1c5541014d8124e7c5",
+            ["imagesource.lua"] = "8bc1d800a8a92e8409c89d96b5411ecf",
+            ["mnist.lua"] = "1922a164677ede3dab7e0460316e26be",
+            ["notmnist.lua"] = "470d6b6abe390aa04c7f60c0c297f7c9",
+            ["penntreebank.lua"] = "c0a86e40d2c19e666d35b711673e10c7",
+            ["sentenceset.lua"] = "61b8551da896e0168ee9bed82b4d3ea2",
+            ["smallimagesource.lua"] = "b0c8d8316e68dc366d90b0df7b25fe31",
+            ["svhn.lua"] = "5f2fdf891db88f2bf030888a1059d6cb",
+            ["textset.lua"] = "a48608d4154d1bfbebd95fa7b4500ee1",
+            ["textsource.lua"] = "e1a39191e321d3462d941ce84d0655d4",
+            ["translatedmnist.lua"] = "2cca457458073e934f1febfe594f0f0b"
+         },
+         examples = {
+            ["alexnet.lua"] = "2e1d2e09fddf6d683d515b65bdb9feb8",
+            ["convolutionneuralnetwork.lua"] = "aa8cd620fe5257d51833d3ea803f7205",
+            ["deepinception.lua"] = "53e64d9e6d146b5b0d08849f96d815ae",
+            ["facialkeypointdetector.lua"] = "1247b012c7a456dd7b90a531fd6021a7",
+            ["fkdbaseline.lua"] = "c682f6a67a5ee969cd15b1464931ada4",
+            ["languagemodel.lua"] = "c78c5315417241d4c3c6f2299e08a3d4",
+            ["mixtureofexperts.lua"] = "59bb5dbedbcf6caec7f61042399d504a",
+            ["neuralnetwork.lua"] = "4be29f06b3705fdb290683cd8a60416b",
+            ["recurrentlanguagemodel.lua"] = "5e8add27a7f4f021a37c14da527f5e4d"
+         },
+         feedback = {
+            ["compositefeedback.lua"] = "13d00027cbd0a739b6e20fe5812ed4da",
+            ["confusion.lua"] = "6d4547a9f4b8c907c69bb4cb23a68c40",
+            ["criteria.lua"] = "bfb7c4df23500c1e569c60c85410aeef",
+            ["facialkeypointfeedback.lua"] = "5716ead1a4445cbf3b3a4d9dd1351751",
+            ["feedback.lua"] = "f17c578098e4e2442673c675d26becec",
+            ["fkdkaggle.lua"] = "d6a14f04b9a8c35282588fa39400565d",
+            ["perplexity.lua"] = "4a7c8596bc9fe7a19449f514c56cd181",
+            ["topcrop.lua"] = "0bf7feb46b6f1bef5190d26cd6ee705e"
+         },
+         ["init.lua"] = "ee537290b88cb72c384aa0bc0331522e",
+         ["mediator.lua"] = "a54a6fda25bb6c7a892092bb89cc6119",
+         nn = {
+            ["FairLookupTable.lua"] = "21f9ba2efaf09efeee06dafd8d1fcf86",
+            ["Print.lua"] = "f57e30a88dac14bdfdcfbb6db109e656"
+         },
+         ["objectid.lua"] = "729274858f9c7c7ce15325b23b1ac0d2",
+         observer = {
+            ["adaptivedecay.lua"] = "2412f0c44631e5f09ecfa7d4ca1c7b58",
+            ["compositeobserver.lua"] = "445c2f6997a0411ad5162bbd68a25a0c",
+            ["earlystopper.lua"] = "28dd8630845aa7c2899165c5368d5d98",
+            ["errorminima.lua"] = "0047213d3bc588447615ff1ad88335f5",
+            ["filelogger.lua"] = "6bbc91675c9b28d4d7c8a8d8b0ce8ea1",
+            ["hyperlog.lua"] = "2c559acd863a9c2ab0a4c54d8dabf743",
+            ["logger.lua"] = "13f6363686fb2cded152933383ff210f",
+            ["observer.lua"] = "a8d6a5184681efa198a0ee463f6cc05c",
+            ["savetofile.lua"] = "d2afec10163b3fd713ebcd6527619df0"
+         },
+         preprocess = {
+            ["binarize.lua"] = "120fdc2b36e0dff327ff92f7ab706cd4",
+            ["gcn.lua"] = "b4302f556edd62b71bf83fb752df910f",
+            ["lecunlcn.lua"] = "e71c39c3a6b9362be3c1366a3477a568",
+            ["parallelpreprocess.lua"] = "807d52e8cc678062fbe4805bbb257136",
+            ["pipeline.lua"] = "27eab036b7934698bf7bf1e265c5f828",
+            ["preprocess.lua"] = "d581907d0c7a4979b09c97bd402ce135",
+            ["standardize.lua"] = "6ddd62a06d139f5b617f1815be975db2",
+            ["zca.lua"] = "7c6706a302c8b88d182ed70671929776"
+         },
+         propagator = {
+            ["evaluator.lua"] = "8b3f5da6fb76b3b05fc1b4ce00d8c481",
+            ["experiment.lua"] = "b960700e5f591ec7babdef93ad480d05",
+            ["optimizer.lua"] = "2e14de06836b8abd3c88894485d053bc",
+            ["propagator.lua"] = "eaf090ec00a7b2a73b15bb89243b8bb7"
+         },
+         sampler = {
+            ["randomsampler.lua"] = "b78512b20db0071b10b616d31e21904c",
+            ["sampler.lua"] = "30a0fd62e74db14717384e71157e8067",
+            ["sentencesampler.lua"] = "8273ab801ab41f5fb70128791b104582",
+            ["shufflesampler.lua"] = "de4cd542ffb430bccb129cb8b38c69f5",
+            ["textsampler.lua"] = "9c896653755f204e4704d97d30ce1dca"
+         },
+         scripts = {
+            ["downloadimagenet.lua"] = "f24584aef23b2bfd5805aac6ca9b2365",
+            ["generate_mnist_data.lua"] = "174ee38603e167b2b8be29d69d76282b",
+            ["harmonizeimagenet.lua"] = "9dd6fe5ccad7f2d3ccef04d586a92b2b",
+            ["json2table.lua"] = "36d51d6e7bddaba548f5f05806691c03",
+            ["listcollections.lua"] = "37138549af8913d53eea1389cbb25c61",
+            ["plotcurves.lua"] = "69a956deb3bc67c94ee0937ceadb8043",
+            ["rankbyminima.lua"] = "d9df101d1303e4ebe032ac52cc728475",
+            ["showfilters.lua"] = "d11815955dcf33e3387c45095a947ba1",
+            ["trainserialized.lua"] = "0d7d7d89f01c74628a5dfe1de6ea065a"
+         },
+         test = {
+            ["runtest.lua"] = "482e8131310e77a200a548c953ad6002",
+            ["test-benchmark.lua"] = "ca73986a1ae95c2466a02d3cf620f444",
+            ["test-cuda.lua"] = "a594e2ac7409e410f5ac172808e35d3f",
+            ["test-datasets.lua"] = "a357f6076445b948995d84441f5d3578",
+            ["test.lua"] = "a7469a23a974531801704d905910284b",
+            ["testDataset.lua"] = "d26d106025efb55512dba9cdc96799a8",
+            ["testDatasetFullSplit.lua"] = "db1547b1186a68c191924e5132c9eb24",
+            ["testDatasetNoSplit.lua"] = "1f2dc0366bd051ada5b20f0329f1f8f0",
+            ["test_imageclassset.lua"] = "9ffd6cea58d1a28cb3b8c6b3333cfa05"
+         },
+         utils = {
+            ["os.lua"] = "bae859427e47a97e569e529cf86c6aca",
+            ["table.lua"] = "ec8e9a20fcd0115100ec46c17d160677",
+            ["torch.lua"] = "8b784de86c3209f95144353aeb271802",
+            ["underscore.lua"] = "f96c75c8fcc6789dd0e3352111aeea08",
+            ["utils.lua"] = "b7910faa4d0fc4f2f5d331203e492f7e"
+         },
+         view = {
+            ["classview.lua"] = "cc91be978b5575885e97c3018c46f0bf",
+            ["dataview.lua"] = "61f4bffed3edf2ab4c59903573e075db",
+            ["imageview.lua"] = "cb8d6a7d1078c3a19953c3ea5a7fe445",
+            ["listview.lua"] = "a0877aef17e7d52369da7526ad3d2b21",
+            ["sequenceview.lua"] = "0c46e67927493a4a68bf0c272bab260a",
+            ["view.lua"] = "428877b5afd7d200f2db4e8bf48311eb"
+         },
+         ["xplog.lua"] = "33a79ee8b3b4eda2d38595bcbf5ef12a"
+      }
+   }
+}

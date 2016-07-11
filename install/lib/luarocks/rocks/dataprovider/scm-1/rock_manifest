@@ -1,0 +1,13 @@
+rock_manifest = {
+   ["dataprovider-scm-1.rockspec"] = "a8aba18d3e4c14fc94235f2e1bfada31",
+   lua = {
+      DataProvider = {
+         ["Container.lua"] = "a93a5f8ad5f5f9fbe05db5fa490d5b06",
+         ["FileSearcher.lua"] = "ec0717a6ad5f552bda0f2856ab5cb67b",
+         ["LMDBProvider.lua"] = "5051f51e1d00591cb53653e10da13bf5",
+         ["MultiThreaded.lua"] = "869a111d4092fbd96206c0963c0ec0f1",
+         ["init.lua"] = "ba6e5f396f78863f245938871bcbfd23",
+         ["test.lua"] = "bbd746216ea8bddce7e87a840d6a2950"
+      }
+   }
+}
